@@ -3,33 +3,34 @@
 @section('content')
     {{-- site links --}}
 
-
-
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- hero section --}}
     <div class="xl:px-[80px] lg:px-[40px] px-[20px]">
-        <div class="grid lg:grid-cols-11 gap-[15px]">
+        <div class="grid lg:grid-cols-11 gap-[15px] items-start">
             {{-- ist grid with video --}}
-            <div class="lg:col-span-7 bg-blue-950 relative">
-                <div class="single-item">
+            <div class="lg:col-span-7 relative">
+                <!-- Slick Slider Container -->
+                <div class="video-slider">
                     <div class="relative">
-                        <!-- Background image -->
-                        <img src="{{ asset('storage/new/vd-bg.png') }}" alt="" class="object-cover w-full h-full">
-
-                        <!-- Video over image with side border -->
-                        <video autoplay muted loop
-                            class="absolute top-0 left-1/2 -translate-x-1/2 md:w-[97%] w-full h-full object-cover">
+                        <video autoplay muted loop class="object-cover object-center">
+                            <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="relative">
+                        <video autoplay muted loop class="object-cover object-center">
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
                 </div>
+
+                <!-- Caption Bar -->
                 <div
-                    class="bg-[#094AB7] font-montagu-slab font-bold text-[12px] sm:text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white text-center py-[18px] absolute bottom-0 left-0 w-full">
+                    class="bg-[#094AB7] font-montagu-slab font-bold text-[12px] sm:text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white text-center py-[18px] w-full z-10 absolute bottom-0 left-0">
                     <p>Twenty Four Seven Premier League</p>
-
                 </div>
-
             </div>
+
+
             {{-- 2nd grid --}}
             <div class="lg:col-span-4">
                 <div class="grid lg:grid-cols-1 md:grid-cols-2   gap-[15px]  md:px-[0px]">
@@ -100,8 +101,24 @@
             </div>
         </h2>
 
+        <style>
+            .multiple-items .slick-next {
+                background-color: #000;
+                height: 100%;
+            }
+
+            .multiple-items .slick-prev {
+                background-color: #000;
+                height: 100%;
+            }
+
+            .multiple-items {
+                width: 96%;
+            }
+        </style>
         {{-- grids --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] ">
+        {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
+        <div class="multiple-items">
             {{-- Match Cards 1 --}}
             <div class="overflow-hidden border-2 border-[#DDDDDD]">
                 {{-- First Section --}}
@@ -309,8 +326,8 @@
                         Match 12 - Pindi Cricket Stadium
                     </p>
                 </div>
+                {{-- </div> --}}
             </div>
-
         </div>
 
 
@@ -379,6 +396,8 @@
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- finalist runner up champions --}}
     <div class="grid grid-cols-7 mt-[100px] max-[768px]:hidden">
+
+
         <!-- left section -->
         <div class="col-span-2 ">
             <!-- top blue bar -->
@@ -1587,7 +1606,8 @@
 
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-[#09154B] opacity-50 group-hover:opacity-100"></div>
-                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent">
+                </div>
 
                 <!-- Date Text -->
                 <div class="absolute bottom-6 left-5 text-white font-montserrat z-10">
@@ -1609,7 +1629,8 @@
 
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-[#09154B] opacity-50 group-hover:opacity-100"></div>
-                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent">
+                </div>
 
                 <!-- Date Text -->
                 <div class="absolute bottom-6 left-5 text-white font-montserrat z-10">
@@ -1631,7 +1652,8 @@
 
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-[#09154B] opacity-50 group-hover:opacity-100"></div>
-                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent">
+                </div>
 
                 <!-- Date Text -->
                 <div class="absolute bottom-6 left-5 text-white font-montserrat z-10">
@@ -1653,7 +1675,8 @@
 
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-[#09154B] opacity-50 group-hover:opacity-100"></div>
-                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent">
+                </div>
 
                 <!-- Date Text -->
                 <div class="absolute bottom-6 left-5 text-white font-montserrat z-10">
@@ -1727,4 +1750,44 @@
         <div class="border-b border-b-[#808080]"></div>
 
     </div>
+    <script>
+        $('.events-slider').on('edge', function(event, slick, direction) {
+            //Edge: last slide of the slider when infinity=false
+            console.log('edge was hit');
+        });
+
+        $(document).ready(function() {
+            $('.video-slider').slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                speed: 600,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+        });
+
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+            dots: false,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
 @endsection
