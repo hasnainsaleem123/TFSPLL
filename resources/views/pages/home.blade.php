@@ -274,6 +274,10 @@
             .multiple-items>.slick-prev {
                 display: none
             }
+
+            .magic_moments .magic_boxes {
+                padding: 0 7px;
+            }
         </style>
         {{-- grids --}}
         {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
@@ -601,14 +605,14 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- magic moments --}}
-    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[10px] magic_moments">
+    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[10px] ">
         <h2 class="text-[#094AB7] xl:text-[30px] lg:text-[23px] text-[18px] font-bold font-montagu-slab">
             Magic Moments
         </h2>
-        {{-- grid --}}
-        <div class="grid md:grid-cols-5 lg:pt-[50px] pt-[20px] gap-[20px]">
+        <div class="magic_moments">
+            {{-- grid --}}
             {{-- ist --}}
-            <div>
+            <div class="magic_boxes">
                 <img src="{{ asset('storage/new/1.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
@@ -617,7 +621,7 @@
                 </div>
             </div>
             {{-- 2nd --}}
-            <div class="max-[768px]:hidden">
+            <div class="max-[768px]:hidden magic_boxes">
                 <img src="{{ asset('storage/new/2.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
@@ -626,7 +630,7 @@
                 </div>
             </div>
             {{-- 3rd --}}
-            <div class="max-[768px]:hidden">
+            <div class="max-[768px]:hidden magic_boxes">
                 <img src="{{ asset('storage/new/3.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
@@ -635,7 +639,7 @@
                 </div>
             </div>
             {{-- 4th --}}
-            <div class="max-[768px]:hidden">
+            <div class="max-[768px]:hidden magic_boxes">
                 <img src="{{ asset('storage/new/4.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
@@ -644,7 +648,7 @@
                 </div>
             </div>
             {{-- 5th --}}
-            <div class="max-[768px]:hidden">
+            <div class="max-[768px]:hidden magic_boxes">
                 <img src="{{ asset('storage/new/5.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
@@ -652,7 +656,15 @@
 
                 </div>
             </div>
+            {{-- 3rd --}}
+            <div class="max-[768px]:hidden magic_boxes">
+                <img src="{{ asset('storage/new/3.png') }}" alt=""
+                    class="w-full h-[290px] md:h-auto object-cover">
+                <div class="bg-[#094AB7]">
+                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
 
+                </div>
+            </div>
         </div>
 
     </div>
@@ -2074,6 +2086,32 @@
             arrows: true,
             dots: false,
             margin: 10,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.magic_moments').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 4,
+            arrows: true,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
             responsive: [{
                     breakpoint: 1024,
                     settings: {
