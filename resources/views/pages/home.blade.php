@@ -6,34 +6,91 @@
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- hero section --}}
     <div class="xl:px-[80px] lg:px-[40px] px-[20px]">
-        <div class="grid lg:grid-cols-11 gap-[15px] items-start">
+        <div class="grid  lg:grid-cols-11 gap-[15px] items-start relative">
             {{-- ist grid with video --}}
-            <div class="lg:col-span-7 relative">
-                <!-- Slick Slider Container -->
-                <div class="video-slider">
-                    <div class="relative">
-                        <video autoplay muted loop class="object-cover object-center">
-                            <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="relative">
-                        <video autoplay muted loop class="object-cover object-center">
-                            <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
-                        </video>
+            <div class="lg:col-span-7">
+                <div class="bg-blue-950 relative">
+                    <!-- Background image -->
+                    <img src="{{ asset('storage/new/vd-bg.png') }}" alt="Background image" class="h-full w-full object-cover">
+
+                    <!-- Video Carousel -->
+                    <div id="video-carousel" class="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-[97%] h-full"
+                        data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-full overflow-hidden">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <video autoplay muted loop playsinline class="block w-full h-full object-cover">
+                                    <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                <video autoplay muted loop playsinline class="block w-full h-full object-cover">
+                                    <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
                     </div>
                 </div>
-
-                <!-- Caption Bar -->
                 <div
-                    class="bg-[#094AB7] font-montagu-slab font-bold text-[12px] sm:text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white text-center py-[18px] w-full z-10 absolute bottom-0 left-0">
+                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white text-center py-[18px] w-full">
                     <p>Twenty Four Seven Premier League</p>
                 </div>
             </div>
+            <style>
+                #video-carousel video {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
 
+                #video-carousel .relative {
+                    overflow: hidden;
+                }
+
+                @media (max-width: 768px) {
+                    #video-carousel video {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            </style>
 
             {{-- 2nd grid --}}
             <div class="lg:col-span-4">
-                <div class="grid lg:grid-cols-1 md:grid-cols-2   gap-[15px]  md:px-[0px]">
+                <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-[15px] md:px-[0px] md:w-full max-w-[1122px]">
+                    {{-- 1st --}}
                     <div class="grid grid-cols-3 bg-[#FFF4ED]">
                         <div
                             class="col-span-2 flex flex-col justify-center font-montserrat pl-[44px] lg:pl-10 2xl:pl-[44px]">
@@ -52,7 +109,7 @@
                             </div>
                         </div>
                         <div class="flex justify-end">
-                            <img src="{{ asset('storage/new/poster1.png') }}" alt="" class="w-[100%] object-cover">
+                            <img src="{{ asset('storage/new/poster1.png') }}" alt="" class="object-cover">
                         </div>
 
                     </div>
@@ -102,25 +159,127 @@
         </h2>
 
         <style>
-            .multiple-items .slick-next {
-                background-color: #000;
-                height: 100%;
+            @media screen and (min-width: 320px) and (max-width: 640px) {
+                .multiple-items>button.slick-next.slick-arrow {
+                    display: none;
+                }
+
+                .multiple-items {
+                    width: 100%;
+                }
+
+                .box_spaces {
+                    margin-top: 15px;
+                    margin-right: 0px !important;
+                }
+
             }
 
-            .multiple-items .slick-prev {
-                background-color: #000;
-                height: 100%;
+
+            @media screen and (min-width: 641px) and (max-width: 900px) {
+                .multiple-items>button.slick-next.slick-arrow {
+                    background-color: #094AB7;
+                    height: 93%;
+                    margin-top: 8px;
+                }
+
+                .multiple-items {
+                    width: 96%;
+                }
+
+                .box_spaces {
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }
+
+                .multiple-items>button.slick-next.slick-arrow {
+                    margin-right: -0.5% !important;
+                    width: 3%;
+                }
             }
 
-            .multiple-items {
-                width: 96%;
+            /* Laptops (901px to 1200px) */
+            @media screen and (min-width: 901px) and (max-width: 1200px) {
+                .multiple-items>button.slick-next.slick-arrow {
+                    background-color: #094AB7;
+                    height: 93%;
+                    margin-top: 8px;
+                }
+
+                .multiple-items {
+                    width: 96%;
+                }
+
+                .box_spaces {
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }
+
+                .multiple-items>button.slick-next.slick-arrow {
+                    margin-right: -1.8% !important;
+                    width: 3%;
+                }
+
+
+                /* Arrow style */
+                /* .slick-next:before { */
+                .multiple-items>button.:before {
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 23px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(-45deg);
+                    margin-left: 2px;
+                }
+            }
+
+            /* Large screens (1201px and up) */
+            @media screen and (min-width: 1201px) {
+                .multiple-items>button.slick-next {
+                    background-color: #094AB7;
+                    height: 94%;
+                }
+
+                .multiple-items {
+                    width: 96%;
+                }
+
+                .box_spaces {
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }
+
+                .multiple-items>button.slick-next.slick-arrow {
+                    margin-right: -2% !important;
+                    width: 3%;
+                }
+
+
+                /* Arrow style */
+                .multiple-items>button.slick-next:before {
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 23px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(-45deg);
+                    margin-left: 2px;
+                }
+            }
+
+
+            .multiple-items>.slick-prev {
+                display: none
             }
         </style>
         {{-- grids --}}
         {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
         <div class="multiple-items">
             {{-- Match Cards 1 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD]">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
                 {{-- First Section --}}
                 <div class="flex items-center justify-between px-[20px] py-[20px]">
                     <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
@@ -171,60 +330,8 @@
                     </p>
                 </div>
             </div>
-            {{-- 2 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD]">
-                {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
-                        03 Nov 2024 - 10:00 am
-                    </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40" fill="none"
-                        class="w-[15px] h-[15px] max-[1199px]:w-[12px] max-[1199px]:h-[12px]">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M23.2323 0.732225C24.2085 -0.244075 25.7915 -0.244075 26.7677 0.732225L44.2677 18.2323C45.244 19.2085 45.244 20.7915 44.2677 21.7677L26.7677 39.2677C25.7915 40.244 24.2085 40.244 23.2323 39.2677C22.256 38.2915 22.256 36.7085 23.2323 35.7323L36.4645 22.5H2.5C1.1193 22.5 0 21.3807 0 20C0 18.6193 1.1193 17.5 2.5 17.5H36.4645L23.2323 4.26777C22.256 3.29145 22.256 1.70855 23.2323 0.732225Z"
-                            fill="black" />
-                    </svg>
-                </div>
-
-                {{-- Second Section --}}
-                <div class="grid grid-cols-5 items-center border-y-2 border-[#DDDDDD]">
-                    <!-- Team 1 -->
-                    <div
-                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
-                        <img src="{{ asset('storage/standings/2.png') }}" alt="Raging Bulls"
-                            class="w-[86px] max-[1199px]:w-[60px]">
-                        <p
-                            class="my-0 text-[14px] max-[1199px]:text-[12px] font-dm-sans font-semibold w-[86px] max-[1199px]:w-[60px] text-[#000]">
-                            Raging Bulls
-                        </p>
-                    </div>
-
-                    <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
-                        <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
-                    </div>
-
-                    <!-- Team 2 -->
-                    <div
-                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
-                        <img src="{{ asset('storage/standings/1.png') }}" alt="Strikers"
-                            class="w-[86px] max-[1199px]:w-[60px]">
-                        <p
-                            class="text-[15px] max-[1199px]:text-[12px] font-dm-sans font-semibold text-[#000] w-[86px] max-[1199px]:w-[60px]">
-                            Strikers
-                        </p>
-                    </div>
-                </div>
-
-                {{-- Third Section --}}
-                <div class="px-[38px] py-[17px] max-[1199px]:px-[20px] max-[1199px]:py-[10px] text-center">
-                    <p class="my-0 text-[12px] max-[1199px]:text-[10px] font-dm-sans font-bold text-[#000]">
-                        Match 12 - Pindi Cricket Stadium
-                    </p>
-                </div>
-            </div>
-            {{-- 3 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD]">
+            {{-- Match Cards 2 --}}
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
                 {{-- First Section --}}
                 <div class="flex items-center justify-between px-[20px] py-[20px]">
                     <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
@@ -275,8 +382,166 @@
                     </p>
                 </div>
             </div>
-            {{-- 4 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD]">
+            {{-- Match Cards 3 --}}
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+                {{-- First Section --}}
+                <div class="flex items-center justify-between px-[20px] py-[20px]">
+                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                        03 Nov 2024 - 10:00 am
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
+                        fill="none" class="w-[15px] h-[15px] max-[1199px]:w-[12px] max-[1199px]:h-[12px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.2323 0.732225C24.2085 -0.244075 25.7915 -0.244075 26.7677 0.732225L44.2677 18.2323C45.244 19.2085 45.244 20.7915 44.2677 21.7677L26.7677 39.2677C25.7915 40.244 24.2085 40.244 23.2323 39.2677C22.256 38.2915 22.256 36.7085 23.2323 35.7323L36.4645 22.5H2.5C1.1193 22.5 0 21.3807 0 20C0 18.6193 1.1193 17.5 2.5 17.5H36.4645L23.2323 4.26777C22.256 3.29145 22.256 1.70855 23.2323 0.732225Z"
+                            fill="black" />
+                    </svg>
+                </div>
+
+                {{-- Second Section --}}
+                <div class="grid grid-cols-5 items-center border-y-2 border-[#DDDDDD]">
+                    <!-- Team 1 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/2.png') }}" alt="Raging Bulls"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="my-0 text-[14px] max-[1199px]:text-[12px] font-dm-sans font-semibold w-[86px] max-[1199px]:w-[60px] text-[#000]">
+                            Raging Bulls
+                        </p>
+                    </div>
+
+                    <!-- VS -->
+                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                        <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
+                    </div>
+
+                    <!-- Team 2 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/1.png') }}" alt="Strikers"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="text-[15px] max-[1199px]:text-[12px] font-dm-sans font-semibold text-[#000] w-[86px] max-[1199px]:w-[60px]">
+                            Strikers
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Third Section --}}
+                <div class="px-[38px] py-[17px] max-[1199px]:px-[20px] max-[1199px]:py-[10px] text-center">
+                    <p class="my-0 text-[12px] max-[1199px]:text-[10px] font-dm-sans font-bold text-[#000]">
+                        Match 12 - Pindi Cricket Stadium
+                    </p>
+                </div>
+            </div>
+            {{-- Match Cards 4 --}}
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+                {{-- First Section --}}
+                <div class="flex items-center justify-between px-[20px] py-[20px]">
+                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                        03 Nov 2024 - 10:00 am
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
+                        fill="none" class="w-[15px] h-[15px] max-[1199px]:w-[12px] max-[1199px]:h-[12px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.2323 0.732225C24.2085 -0.244075 25.7915 -0.244075 26.7677 0.732225L44.2677 18.2323C45.244 19.2085 45.244 20.7915 44.2677 21.7677L26.7677 39.2677C25.7915 40.244 24.2085 40.244 23.2323 39.2677C22.256 38.2915 22.256 36.7085 23.2323 35.7323L36.4645 22.5H2.5C1.1193 22.5 0 21.3807 0 20C0 18.6193 1.1193 17.5 2.5 17.5H36.4645L23.2323 4.26777C22.256 3.29145 22.256 1.70855 23.2323 0.732225Z"
+                            fill="black" />
+                    </svg>
+                </div>
+
+                {{-- Second Section --}}
+                <div class="grid grid-cols-5 items-center border-y-2 border-[#DDDDDD]">
+                    <!-- Team 1 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/2.png') }}" alt="Raging Bulls"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="my-0 text-[14px] max-[1199px]:text-[12px] font-dm-sans font-semibold w-[86px] max-[1199px]:w-[60px] text-[#000]">
+                            Raging Bulls
+                        </p>
+                    </div>
+
+                    <!-- VS -->
+                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                        <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
+                    </div>
+
+                    <!-- Team 2 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/1.png') }}" alt="Strikers"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="text-[15px] max-[1199px]:text-[12px] font-dm-sans font-semibold text-[#000] w-[86px] max-[1199px]:w-[60px]">
+                            Strikers
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Third Section --}}
+                <div class="px-[38px] py-[17px] max-[1199px]:px-[20px] max-[1199px]:py-[10px] text-center">
+                    <p class="my-0 text-[12px] max-[1199px]:text-[10px] font-dm-sans font-bold text-[#000]">
+                        Match 12 - Pindi Cricket Stadium
+                    </p>
+                </div>
+                {{-- </div> --}}
+            </div>
+            {{-- Match Cards 5 --}}
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+                {{-- First Section --}}
+                <div class="flex items-center justify-between px-[20px] py-[20px]">
+                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                        03 Nov 2024 - 10:00 am
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
+                        fill="none" class="w-[15px] h-[15px] max-[1199px]:w-[12px] max-[1199px]:h-[12px]">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.2323 0.732225C24.2085 -0.244075 25.7915 -0.244075 26.7677 0.732225L44.2677 18.2323C45.244 19.2085 45.244 20.7915 44.2677 21.7677L26.7677 39.2677C25.7915 40.244 24.2085 40.244 23.2323 39.2677C22.256 38.2915 22.256 36.7085 23.2323 35.7323L36.4645 22.5H2.5C1.1193 22.5 0 21.3807 0 20C0 18.6193 1.1193 17.5 2.5 17.5H36.4645L23.2323 4.26777C22.256 3.29145 22.256 1.70855 23.2323 0.732225Z"
+                            fill="black" />
+                    </svg>
+                </div>
+
+                {{-- Second Section --}}
+                <div class="grid grid-cols-5 items-center border-y-2 border-[#DDDDDD]">
+                    <!-- Team 1 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/2.png') }}" alt="Raging Bulls"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="my-0 text-[14px] max-[1199px]:text-[12px] font-dm-sans font-semibold w-[86px] max-[1199px]:w-[60px] text-[#000]">
+                            Raging Bulls
+                        </p>
+                    </div>
+
+                    <!-- VS -->
+                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                        <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
+                    </div>
+
+                    <!-- Team 2 -->
+                    <div
+                        class="col-span-2 py-[13px] px-[33px] max-[1199px]:px-[20px] text-center flex flex-col items-center">
+                        <img src="{{ asset('storage/standings/1.png') }}" alt="Strikers"
+                            class="w-[86px] max-[1199px]:w-[60px]">
+                        <p
+                            class="text-[15px] max-[1199px]:text-[12px] font-dm-sans font-semibold text-[#000] w-[86px] max-[1199px]:w-[60px]">
+                            Strikers
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Third Section --}}
+                <div class="px-[38px] py-[17px] max-[1199px]:px-[20px] max-[1199px]:py-[10px] text-center">
+                    <p class="my-0 text-[12px] max-[1199px]:text-[10px] font-dm-sans font-bold text-[#000]">
+                        Match 12 - Pindi Cricket Stadium
+                    </p>
+                </div>
+                {{-- </div> --}}
+            </div>
+            {{-- Match Cards 6 --}}
+            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
                 {{-- First Section --}}
                 <div class="flex items-center justify-between px-[20px] py-[20px]">
                     <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
@@ -336,7 +601,7 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- magic moments --}}
-    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[10px]">
+    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[10px] magic_moments">
         <h2 class="text-[#094AB7] xl:text-[30px] lg:text-[23px] text-[18px] font-bold font-montagu-slab">
             Magic Moments
         </h2>
@@ -1764,15 +2029,51 @@
                 speed: 600,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                responsive: [{
+
+                        breakpoint: 2000,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+
+                    {
+
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             });
         });
 
         $('.multiple-items').slick({
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             arrows: true,
             dots: false,
+            margin: 10,
             responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -1788,6 +2089,31 @@
                     }
                 }
             ]
+        });
+
+
+
+        function handleArrowVisibility() {
+            var $slickNext = $('.multiple-items .slick-next');
+            var screenWidth = $(window).width();
+
+            if (screenWidth >= 320 && screenWidth <= 600) {
+                console.log('hello');
+                if ($slickNext.length) {
+                    console.log('hello2');
+                    $slickNext.remove();
+                }
+            }
+        }
+
+        // Run on document ready
+        $(document).ready(function() {
+            handleArrowVisibility();
+
+            // Also run on window resize
+            $(window).on('resize', function() {
+                handleArrowVisibility();
+            });
         });
     </script>
 @endsection
