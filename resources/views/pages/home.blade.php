@@ -278,6 +278,17 @@
             .magic_moments .magic_boxes {
                 padding: 0 7px;
             }
+
+            .highlights_section .highlights_box {
+                padding: 0 7px;
+            }
+
+            .featured_players .featured_players_box {}
+
+            .news_section .news_section_box {
+                margin-top: 15px;
+                margin-right: 7px;
+            }
         </style>
         {{-- grids --}}
         {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
@@ -672,7 +683,7 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- finalist runner up champions --}}
-    <div class="grid grid-cols-7 mt-[100px] max-[768px]:hidden">
+    <div class="grid grid-cols-7 mt-[100px] max-[768px]:hidden ">
 
 
         <!-- left section -->
@@ -1562,7 +1573,7 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     <!-- Highlights section -->
-    <div class="bg-[#FFF4ED] md:h-full h-[480px]">
+    <div class="bg-[#FFF4ED] md:h-full h-[480px] ">
         <div
             class="  sm:mt-[20px] md:mt-[80px] lg:mt-[74px]  xl:px-[80px] lg:px-[40px] px-[20px] max-[640px]:mt-[20px] mt-[100px] h-[536px]">
             <div class="flex items-center justify-between ">
@@ -1583,17 +1594,18 @@
 
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 justify-end gap-[25px] ">
+            {{-- <div class="grid grid-cols-1 md:grid-cols-4 justify-end gap-[25px] "> --}}
+            <div class="highlights_section">
 
 
-                <div class="relative w-full max-h-[304px] ">
+                <div class="relative w-full max-h-[304px]   highlights_box">
                     <!-- Default Image (Visible by Default) -->
                     <img src="{{ asset('storage/new/worriors.png') }}" alt="Default Image"
                         class="w-full h-[304px] md:h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
 
                     <!-- Hover Image (Hidden by Default, Appears on Hover) -->
                     <img src="{{ asset('storage/new/h1.png') }}" alt="Hover Image"
-                        class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
+                        class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
                     <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
@@ -1602,7 +1614,7 @@
                     </div>
                 </div>
 
-                <div class="relative w-full max-h-[304px] max-[768px]:hidden">
+                <div class="relative w-full max-h-[304px]  highlights_box">
                     <!-- Default Image (Visible by Default) -->
                     <img src="{{ asset('storage/new/invaders.png') }}" alt="Default Image"
                         class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
@@ -1616,7 +1628,7 @@
                             Umpire’s Controversial Decision</p>
                     </div>
                 </div>
-                <div class="relative w-full max-h-[304px] max-[768px]:hidden">
+                <div class="relative w-full max-h-[304px]  highlights_box">
                     <!-- Default Image (Visible by Default) -->
                     <img src="{{ asset('storage/new/zalmi.png') }}" alt="Default Image"
                         class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
@@ -1630,7 +1642,7 @@
                             Umpire’s Controversial Decision</p>
                     </div>
                 </div>
-                <div class="relative w-full max-h-[304px] max-[768px]:hidden">
+                <div class="relative w-full max-h-[304px]  highlights_box">
                     <!-- Default Image (Visible by Default) -->
                     <img src="{{ asset('storage/new/sultan.png') }}" alt="Default Image"
                         class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
@@ -1657,9 +1669,10 @@
             class="font-montagu-slab text-[18px] xl:text-[30px] lg:text-[24px] md:text-[22px] font-bold leading-[46px] pb-[20px] md:pb-[50px] text-[#094AB7]">
             Featured Players</h3>
 
-        <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-[30px] ">
+        {{-- <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-[30px] "> --}}
+        <div class="featured_players">
             {{-- ist --}}
-            <div class=" bg-[#FFF4ED] border border-[#F4F4F4]">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1706,7 +1719,7 @@
 
             </div>
             {{-- 2nd --}}
-            <div class=" bg-[#FFF4ED] max-[640px]:hidden">
+            <div class=" bg-[#FFF4ED] max-[640px]:hidden featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1753,7 +1766,7 @@
 
             </div>
             {{-- 3rd --}}
-            <div class=" bg-[#FFF4ED]  max-[640px]:hidden">
+            <div class=" bg-[#FFF4ED]  max-[640px]:hidden featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1800,7 +1813,7 @@
 
             </div>
             {{-- 4th --}}
-            <div class=" bg-[#FFF4ED] max-[640px]:hidden">
+            <div class=" bg-[#FFF4ED] max-[640px]:hidden featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1873,10 +1886,11 @@
         </div>
 
         <!-- News Grid -->
-        <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:py-[25px] lg:py-[12px] sm:py-[20px] min-[365px]:py-[12px] xl:gap-[22px] lg:gap-[10px] md:gap-[10px] min-[365px]:gap-[10px]">
+        {{-- <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:py-[25px] lg:py-[12px] sm:py-[20px] min-[365px]:py-[12px] xl:gap-[22px] lg:gap-[10px] md:gap-[10px] min-[365px]:gap-[10px]"> --}}
+        <div class="news_section">
             <!-- News Item -->
-            <div class="relative group overflow-hidden">
+            <div class="relative group overflow-hidden news_section_box">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -1899,7 +1913,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden">
+            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -1922,7 +1936,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden">
+            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -1945,7 +1959,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden">
+            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -2106,6 +2120,81 @@
         $('.magic_moments').slick({
             infinite: true,
             slidesToShow: 5,
+            slidesToScroll: 4,
+            arrows: true,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.highlights_section').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 4,
+            arrows: true,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.featured_players').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 4,
+            arrows: true,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.news_section').slick({
+            infinite: true,
+            slidesToShow: 3,
             slidesToScroll: 4,
             arrows: true,
             dots: false,

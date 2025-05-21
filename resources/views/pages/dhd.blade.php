@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="mt-10">
-        <div>
+        <div class="container d-flex">
             <div id="test1" class="font-calibri text-[20px] text-center font-bold text-[#0A0443]">
                 an apple a day keeps the doctor away
             </div>
@@ -61,6 +61,22 @@
 
             </div>
         </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="flex">
+            <div class="h-10 w-10 bg-amber-900">
+                dhsjd
+                <div class="h-10 w-10 bg-amber-500">
+                    dhsjd
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 @endsection
 
