@@ -159,7 +159,7 @@
         </h2>
 
         <style>
-            @media screen and (min-width: 320px) and (max-width: 640px) {
+            @media screen and (min-width: 365px) and (max-width: 640px) {
                 .multiple-items>button.slick-next.slick-arrow {
                     display: none;
                 }
@@ -172,6 +172,14 @@
                     margin-top: 15px;
                     margin-right: 0px !important;
                 }
+
+                .multiple-items>.slick-prev {
+                    display: none
+                }
+
+
+
+
 
             }
 
@@ -196,6 +204,12 @@
                     margin-right: -0.5% !important;
                     width: 3%;
                 }
+
+                .multiple-items>.slick-prev {
+                    display: none
+                }
+
+
             }
 
             /* Laptops (901px to 1200px) */
@@ -235,11 +249,12 @@
                 }
             }
 
-            /* Large screens (1201px and up) */
-            @media screen and (min-width: 1201px) {
-                .multiple-items>button.slick-next {
+            /* Laptops (1201px to 1600px) */
+            @media screen and (min-width: 1201px) and (max-width: 1600px) {
+                .multiple-items>button.slick-next.slick-arrow {
                     background-color: #094AB7;
-                    height: 94%;
+                    height: 93%;
+                    margin-top: 8px;
                 }
 
                 .multiple-items {
@@ -252,13 +267,14 @@
                 }
 
                 .multiple-items>button.slick-next.slick-arrow {
-                    margin-right: -2% !important;
+                    margin-right: -2.1% !important;
                     width: 3%;
                 }
 
 
                 /* Arrow style */
-                .multiple-items>button.slick-next:before {
+                /* .slick-next:before { */
+                .multiple-items>button.:before {
                     content: '';
                     display: block;
                     width: 22px;
@@ -270,24 +286,62 @@
                 }
             }
 
+            /* Large screens (1600px and up) */
+            @media screen and (min-width: 1601px) {
+                .multiple-items>button.slick-next.slick-arrow {
+                    background-color: #094AB7;
+                    height: 93%;
+                    margin-top: 8px;
+                }
 
-            .multiple-items>.slick-prev {
-                display: none
+                .multiple-items {
+                    width: 96%;
+                }
+
+                .box_spaces {
+                    margin-top: 15px;
+                    margin-right: 15px;
+                }
+
+                .multiple-items>button.slick-next.slick-arrow {
+                    margin-right: -2.6% !important;
+                    width: 3%;
+
+
+                    /* Arrow style */
+                    .multiple-items>button.slick-next:before {
+                        content: '';
+                        display: block;
+                        width: 22px;
+                        height: 23px;
+                        border: solid white;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(-45deg);
+                        margin-left: 2px;
+                    }
+
+
+                }
+
             }
 
             .magic_moments .magic_boxes {
-                padding: 0 7px;
+                margin: 0 7px;
+            }
+
+            .featured_players .featured_players_box {
+                margin: 0 15px;
             }
 
             .highlights_section .highlights_box {
                 padding: 0 7px;
             }
 
-            .featured_players .featured_players_box {}
+
 
             .news_section .news_section_box {
-                margin-top: 15px;
-                margin-right: 7px;
+
+                margin: 15px;
             }
         </style>
         {{-- grids --}}
@@ -1719,7 +1773,7 @@
 
             </div>
             {{-- 2nd --}}
-            <div class=" bg-[#FFF4ED] max-[640px]:hidden featured_players_box">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1736,21 +1790,21 @@
                         </div>
 
                     </div>
-                    <div class="col-span-3 flex justify-center bg-[#FBCD35]">
+                    <div class="col-span-3 flex justify-center bg-yellow-400">
                         <img src="{{ asset('storage/new/54.png') }}" alt="featured player" class="h-full object-cover">
 
                     </div>
                 </div>
                 <div class="grid grid-cols-2 px-[30px]">
                     <div class="mt-[16px]">
-                        <p class="font-dm-sans text-[14px] font-bold mb-[8px]">Muhammad </p>
+                        <p class="font-dm-sans text-[14px] font-bold mb-[8px]">Muhammad</p>
                         <p class="font-montagu-slab md:text-[22px] text-[20px] font-bold mb-[8px]">Awais Khan</p>
-                        <p class="font-montserrat text-[12px] md:text-[14px] mb-[16px]">Allrounder</p>
+                        <p class="font-montserrat md:text-[14px] text-[12px] mb-[16px]">Allrounder</p>
                     </div>
                     <div>
                         <div class="flex justify-end mb-[8px]">
                             <img src="{{ asset('storage/new/s.png') }}" alt="featured player"
-                                class=" object-cover mt-[22px] w-[32px] h-[37px]">
+                                class=" object-cover w-[32px] h-[37px] mt-[22px] ">
                         </div>
                         <div class="flex justify-end mb-[16px]">
                             <button class="font-dm-sans text-[12px] font-medium">
@@ -1813,7 +1867,7 @@
 
             </div>
             {{-- 4th --}}
-            <div class=" bg-[#FFF4ED] max-[640px]:hidden featured_players_box">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1830,21 +1884,21 @@
                         </div>
 
                     </div>
-                    <div class="col-span-3 flex justify-center bg-[#FBCD35]">
+                    <div class="col-span-3 flex justify-center bg-yellow-400">
                         <img src="{{ asset('storage/new/54.png') }}" alt="featured player" class="h-full object-cover">
 
                     </div>
                 </div>
                 <div class="grid grid-cols-2 px-[30px]">
                     <div class="mt-[16px]">
-                        <p class="font-dm-sans text-[14px] font-bold mb-[8px]">Muhammad </p>
+                        <p class="font-dm-sans text-[14px] font-bold mb-[8px]">Muhammad</p>
                         <p class="font-montagu-slab md:text-[22px] text-[20px] font-bold mb-[8px]">Awais Khan</p>
-                        <p class="font-montserrat text-[12px] md:text-[14px] mb-[16px]">Allrounder</p>
+                        <p class="font-montserrat md:text-[14px] text-[12px] mb-[16px]">Allrounder</p>
                     </div>
                     <div>
                         <div class="flex justify-end mb-[8px]">
                             <img src="{{ asset('storage/new/s.png') }}" alt="featured player"
-                                class=" object-cover mt-[22px] w-[32px] h-[37px]">
+                                class=" object-cover w-[32px] h-[37px] mt-[22px] ">
                         </div>
                         <div class="flex justify-end mb-[16px]">
                             <button class="font-dm-sans text-[12px] font-medium">
@@ -2144,7 +2198,7 @@
         });
         $('.highlights_section').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 4,
             arrows: true,
             dots: false,
@@ -2169,7 +2223,7 @@
         });
         $('.featured_players').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 4,
             arrows: true,
             dots: false,
@@ -2194,7 +2248,7 @@
         });
         $('.news_section').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 4,
             arrows: true,
             dots: false,
@@ -2242,5 +2296,44 @@
                 handleArrowVisibility();
             });
         });
+
+
+        s document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('#video-carousel [data-carousel-item]');
+            const videos = document.querySelectorAll('#video-carousel video');
+            let current = 0;
+
+            // Play the first video
+            videos[current]?.play();
+
+            function showSlide(index) {
+                items.forEach((item, i) => {
+                    if (i === index) {
+                        item.classList.remove('hidden');
+                        item.setAttribute('data-carousel-item', 'active');
+                        videos[i]?.play();
+                    } else {
+                        item.classList.add('hidden');
+                        item.removeAttribute('data-carousel-item');
+                        videos[i]?.pause();
+                        videos[i].currentTime = 0;
+                    }
+                });
+            }
+
+            // Next Button
+            document.querySelector('[data-carousel-next]').addEventListener('click', () => {
+                current = (current + 1) % items.length;
+                showSlide(current);
+            });
+
+            // Prev Button
+            document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
+                current = (current - 1 + items.length) % items.length;
+                showSlide(current);
+            });
+        });
+    </script>
+
     </script>
 @endsection
