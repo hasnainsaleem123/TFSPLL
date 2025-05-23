@@ -2,202 +2,446 @@
 
 
 @section('content')
+    <style>
+        .management_section .management_section_box,
+        .story_section .story_section_box {
+            margin: 15px;
+        }
+
+        .management_section .slick-list,
+        .story_section .slick-list {
+            margin: 0 -15px;
+
+
+        }
+    </style>
     {{-- hero section --}}
-    <div class="relative flex flex-col justify-center items-center h-[500px] overflow-hidden">
-        <img src="{{ asset('storage/about/bg.png') }}" alt=""
-            class=" absolute left-0  bottom-0 top-0 w-full h-full object-cover">
-        <div
-            class="relative flex flex-col items-center text-center 2xl:leading-[60px] xl:leading-[40px] lg:leading-[40px] min-[365px]:leading-[30px]">
-            <h2 class="text-white 2xl:text-[50px] xl:text-[40px] lg:text-[30px] min-[365px]:text-[20px] font-bold ">About us
-            </h2>
-            <p class="text-white 2xl:text-[16px] xl:text-[16px] lg:text-[15px]  font-montserrat capitalize opacity-[65%]">
-                Read
-                more about our mission and vision
-            </p>
+    <div class="relative w-full h-full">
+        <!-- Bottom Image -->
+        <img src="{{ asset('storage/about/about1.png') }}" alt="" class="w-full h-full object-cover">
+
+        <!-- Middle Image (1st overlay) -->
+        <img src="{{ asset('storage/about/about2.png') }}" alt="" class="absolute top-0 left-0 w-full  object-contain">
+
+        <!-- Top Image (2nd overlay) -->
+        <img src="{{ asset('storage/about/about3.png') }}" alt=""
+            class="absolute top-0 left-0 w-full h-full object-contain">
+
+        <!-- Text Block -->
+        <div class="absolute 2xl:bottom-20 lg:left-20 xl:bottom-15 lg:bottom-10 md:left-15 bottom-5 left-4">
+            <p class="text-white font-dm-sans font-semibold 2xl:text-[18px] xl:text-[14px] text-[10px]">Chief Executive
+                Officer</p>
+            <p
+                class="font-montserrat font-bold  2xl:text-[40px] xl:text-[30px] lg:text-[20px] md:text-[15px] 2xl:mt-[20px] text-[12px] text-white">
+                Naeem
+                Abbas: TFSC Premier
+                League
+                Fxtures &
+                Results</p>
+
         </div>
     </div>
 
-    {{-- ist section of the page --}}
-    <div class="relative overflow-hidden">
-        <div>
-            <div class="mt-[48px] w-[84%] mx-auto 2xl:px-[80px] xl:px-[60px] lg:px-[40px] ">
 
-
-                <div class=" min-[365px]:mb-[50px] lg:w-full">
-                    {{-- grid --}}
-                    <div
-                        class="lg:grid lg:grid-cols-2  2xl:gap-[220px] xl:gap-[180px] lg:gap-[100px] md:flex md:flex-col max-[1023px]:justify-center items-center ">
-
-                        {{-- blue bar nd ist grid column --}}
-                        <div class="lg:mt-[30px]  2xl:mt-[64px] 2xl:mb-[74px]  xl:mt-[44px] xl:mb-[54px] flex flex-col">
-                            <!-- Blue Bar -->
-                            <div
-                                class="absolute left-[-10px] h-[26px] w-[9%] lg:h-[20px] min-[365px]:h-[17px] xl:h-[28px] lg:w-[10%] bg-[#09154B] 2xl:mt-2 lg:mt-0 min-[365px]:mt-1 rounded-full ">
-                            </div>
-                            {{-- text --}}
-                            <div class="lg:max-w-[658px]">
-                                <h2
-                                    class="pb-[13px] sm:text-[20px] lg:text-[25px] xl:text-[30px] 2xl:text-[36px] font-montserrat font-bold text-[#09154B] 2xl:leading-[46px] xl:leading-[26px] lg:leading-[16px] ">
-                                    Who We
-                                    Are?
-                                </h2>
-                                <p
-                                    class="text-gray-700 text-left lg:text-[12px] xl:text-[14px] 2xl:text-[16px] font-montserrat font-medium min-[1700px]:leading-[46px] 2xl:leading-[36px] xl:leading-[26px] lg:leading-[26px]  max-[1024px]:flex max-[1024px]:justify-center ">
-                                    The Twenty Four Seven company is committed to promoting cricket in Pakistan, a nation
-                                    where
-                                    the
-                                    sport is deeply ingrained in the culture. Established with the vision to foster talent
-                                    and
-                                    drive
-                                    the
-                                    development of cricket, we work tirelessly to support players at all levels, for both
-                                    men
-                                    and
-                                    women.
-                                    Over the years, we have played a vital role in nurturing the love for cricket, providing
-                                    opportunities for aspiring cricketers, and elevating Pakistan's standing in
-                                    international
-                                    competitions. Our mission is to ignite the nation’s passion for the game and contribute
-                                    to
-                                    its
-                                    continued excellence on the global stage.
-                                </p>
-
-                            </div>
-                            <div
-                                class=" lg:max-w-[658px] border-1 border-gray-200 xl:mt-[36px] xl:mb-[38px] lg:mt-[25px] lg:mb-[25px] min-[365px]:my-[15px] ">
-
-                            </div>
-                        </div>
-
-                        <!-- Right Image Section (Single Image with Grid) -->
-                        <div class=" flex lg:justify-end sm:justify-center  ">
-                            <div class="box max-h-[555px]">
-                                <img src="{{ asset('storage/about/2.png') }}" alt="" class="p-5  w-full h-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- 2nd section of the page --}}
-    <div class="relative overflow-hidden">
-        <div class="my-[48px] w-[84%] mx-auto 2xl:px-[80px] xl:px-[60px] lg:px-[40px] overflow-hidden">
-            <div
-                class="lg:grid lg:grid-cols-2  2xl:gap-[154px] xl:gap-[60px] lg:gap-[20px] md:flex md:flex-col max-[1023px]:justify-center lg:mb-[74px] md:mb-[600px] sm:mb-[50px] min-[365px]:mb-[50px] lg:w-full items-center">
-                {{-- img --}}
-                <div class="flex lg:justify-start sm:justify-center ">
-                    <div class="box max-h-[588px]">
-                        <img src="{{ asset('storage/about/1.png') }}" alt="" class="p-5 object-fill w-full h-full ">
-                    </div>
-                </div>
-                {{-- text --}}
-                <div class="lg:mt-[30px]  xl:mt-[80px] sm:mt-[0px] flex flex-col">
-                    <!-- Blue Bar -->
-                    <div
-                        class="absolute right-[-10px] lg:h-[20px] xl:h-[28px] 2xl:w-[28%] xl:w-[30%] lg:w-[30%] w-[60%] min-[365px]:h-[17px] bg-[#09154B] 2xl:mt-2 lg:mt-0 min-[365px]:mt-[35px] rounded-tl-full rounded-bl-full">
-                    </div>
-                    {{-- text --}}
-                    <div>
-                        <h2
-                            class="pb-[13px] min-[365px]:mt-[30px] lg:mt-0   sm:text-[20px] lg:text-[25px] xl:text-[30px] 2xl:text-[36px] font-montserrat font-bold text-[#09154B] 2xl:leading-[46px] xl:leading-[26px] lg:leading-[16px] ">
-                            What we do?
-                        </h2>
-                        <p
-                            class="text-gray-700 text-left mt-3 lg:text-[10px] xl:text-[13px] 2xl:text-[16px] font-montserrat font-medium 2xl:leading-[46px] xl:leading-[26px] lg:leading-[24px]  max-[1024px]:flex max-[1024px]:justify-center max-w-[634px]">
-                            As pioneers in creating premier cricket leagues, we aim to provide a platform where talent meets
-                            opportunity, and where the love for the game transcends boundaries. Whether you're a seasoned
-                            professional or an aspiring cricketer, our leagues are designed to foster camaraderie, celebrate
-                            diversity, and inspire excellence.
-                        </p>
-                        <!-- Stats Section -->
-                        <div class="flex flex-wrap gap-5 md:gap-[25px] mt-[24px] md:mt-10">
-                            <div
-                                class="flex flex-col justify-center items-center bg-[#09154B] text-white w-[140px] h-[80px] 2xl:w-[168px]  2xl:h-[92px]  xl:w-[148px]  xl:h-[82px] lg:w-[128px]  lg:h-[72px]  rounded-[15px]">
-                                <p class="text-[36px] md:text-[48px] font-bold font-montserrat leading-none">2+</p>
-                                <p class="text-[16px] md:text-[18px] font-bold font-montserrat leading-none">Years</p>
-                            </div>
-                            <div
-                                class="flex flex-col justify-center items-center bg-[#09154B] text-white w-[140px] h-[80px] 2xl:w-[168px]  2xl:h-[92px]  xl:w-[148px]  xl:h-[82px] lg:w-[128px]  lg:h-[72px] rounded-[15px]">
-                                <p class="text-[36px] md:text-[48px] font-bold font-montserrat leading-none">5+</p>
-                                <p class="text-[16px] md:text-[18px] font-bold font-montserrat leading-none">Years</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    {{-- bottom line --}}
-                    <div class="border-1 border-gray-200 xl:mt-[76px] lg:mt-[40px] min-[365px]:mt-[30px]">
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </div>
-
-    {{-- 2nd section --}}
-    {{-- 
-    <div class="w-[84%] mx-auto px-4 md:px-0 md:mb-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0">
-
-            <!-- Left Image -->
-            <div class="flex md:justify-start justify-center ">
-                <div
-                    class="w-full max-w-[588px] h-auto md:h-[588px] border-2 border-dashed border-black flex justify-center rounded-[25px]">
-                    <img src="{{ asset('storage/about/1.png') }}" alt="" class="p-5 w-full h-auto">
-                </div>
-            </div>
-
-            <!-- Right Content -->
-            <div class="items-left flex flex-col">
-
-                <!-- Blue Bar & Heading -->
-                <div class="relative flex items-center mt-10 md:mt-20">
-                    <!-- Heading -->
-                    <h2
-                        class="text-[28px] md:text-[36px] font-montserrat font-bold text-[#09154B] leading-[36px] md:leading-[46px]">
-                        What we do?
-                    </h2>
-                    <div
-                        class="absolute right-0 md:right-[-200px] h-6 md:h-8 w-[80%] md:w-[674px] bg-[#09154B] rounded-full hidden sm:block">
-                    </div>
-                </div>
-
-                <!-- Paragraph -->
-                <div>
-                    <p
-                        class="text-gray-700 text-left text-[14px] md:text-[16px] font-montserrat font-medium leading-[30px] md:leading-[46px] w-full md:w-[634px]">
-                        As pioneers in creating premier cricket leagues, we aim to provide a platform where talent meets
-                        opportunity, and where the love for the game transcends boundaries. Whether you're a seasoned
-                        professional or an aspiring cricketer, our leagues are designed to foster camaraderie, celebrate
-                        diversity, and inspire excellence.
+    {{-- tfsc managemnt --}}
+    <div class="bg-[#094AB7]">
+        <div class="px-[80px]">
+            <div class="grid grid-cols-9 xl:mt-[90px] md:mt-[60px] mt-[40px] py-[90px]">
+                <div class="col-span-3">
+                    <p class="font-montagu-slab text-[30px] font-bold text-white">TFSC Premier League
+                        Management</p>
+                    <p class="font-dm-sans font-normal text-[18px] leading-[24px] mt-[20px] max-w-[547px]">
+                        Twenty Four Seven Consultancy Premier League Twenty Four Seven Consultancy Premier League Twenty
+                        Four Seven Consultancy Premier League Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quisquam magni nam nisi laboriosam
                     </p>
-
-                    <!-- Stats Section -->
-                    <div class="flex flex-wrap gap-5 md:gap-[25px] mt-6 md:mt-10">
-                        <div
-                            class="flex flex-col justify-center items-center bg-[#09154B] text-white w-[140px] md:w-[168px] h-[80px] md:h-[92px] rounded-[15px]">
-                            <p class="text-[36px] md:text-[48px] font-bold font-montserrat leading-none">2+</p>
-                            <p class="text-[16px] md:text-[18px] font-bold font-montserrat leading-none">Years</p>
-                        </div>
-                        <div
-                            class="flex flex-col justify-center items-center bg-[#09154B] text-white w-[140px] md:w-[168px] h-[80px] md:h-[92px] rounded-[15px]">
-                            <p class="text-[36px] md:text-[48px] font-bold font-montserrat leading-none">5+</p>
-                            <p class="text-[16px] md:text-[18px] font-bold font-montserrat leading-none">Years</p>
-                        </div>
-                    </div>
+                    <button class=" px-[80px] py-[8px] bg-yellow-400 mt-[30px]">
+                        View All
+                    </button>
                 </div>
 
-                <div class="mt-6 md:mt-18">
-                    <hr class="border border-gray-200">
+
+
+                <div class="col-span-6 ">
+                    <div class="management_section  ">
+
+                        <div class="relative management_section_box">
+                            <img src="{{ asset('storage/about/danish.png') }}" alt=""
+                                class="w-full h-full object-cover">
+                            <p class="absolute bottom-5 left-5 text-[24px] font-montserrat font-bold text-white">Chief
+                                Operating
+                                Officer:
+                                Danish Ather
+
+                            </p>
+                        </div>
+                        <div class="relative management_section_box">
+                            <img src="{{ asset('storage/about/muzahir.png') }}" alt=""
+                                class="w-full h-full object-cover">
+                            <p class="absolute bottom-5 left-5 text-[24px] font-montserrat font-bold text-white">Director
+                                Operations:
+                                Muzahir Hussain
+
+                            </p>
+                        </div>
+                        <div class="relative management_section_box">
+                            <img src="{{ asset('storage/about/salman.png') }}" alt=""
+                                class="w-full h-full object-cover">
+                            <p class="absolute bottom-5 left-5 text-[24px] font-montserrat font-bold text-white">Director
+                                Administration:
+                                Muhammad Sulaman
+                            </p>
+                        </div>
+                        <div class="relative management_section_box">
+                            <img src="{{ asset('storage/about/salman.png') }}" alt=""
+                                class="w-full h-full object-cover">
+                            <p class="absolute bottom-5 left-5 text-[24px] font-montserrat font-bold text-white">Director
+                                Administration:
+                                Muhammad Sulaman
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {{-- tfsc community --}}
+    <div class="bg-[#FFF4ED] mt-[100px] py-[60px]">
+        <div class="px-[80px]">
+            <h2 class="text-[#094AB7] font-montagu-slab font-bold text-[30px]">
+                TFSC Community
+            </h2>
+            <div class="mt-[30px] relative">
+                <!-- Background Image -->
+                <img src="{{ asset('storage/about/comunity.png') }}" alt="" class="w-full h-[550px] object-cover">
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-[#094AB7] opacity-80"></div>
+
+                <!-- Centered Content -->
+                <div class="absolute inset-0 flex items-center justify-center ">
+                    <div class="grid grid-cols-2 max-w-[741px] relative">
+                        <div class="col-span-1">
+                            <div class="bg-[#094AB7] ">
+                                <div class="pt-[30px] px-[40px]">
+                                    <p class="font-dm-sans text-[24px] font-bold text-white">Do You Want Feel Part Of
+                                        TFS Premier League</p>
+                                    <div class="flex justify-center">
+                                        <img src="{{ asset('storage/about/tfsc1.png') }}" alt=""
+                                            class="w-[258px]  max-h-[282px] object-cover">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="absolute bottom-8 right-0 bg-white px-[50px] py-[30px]">
+                            <p class=" font-dm-sans text-[24px] font-bold ">Join the TFSC
+                                Community
+                            </p>
+                            <button class="px-[42px] py-[9px] bg-yellow-400 font-dm-sans text-[14px] mt-[15px] ">Become
+                                Premium
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    {{-- our Story --}}
+    <div class="bg-[#FFF4ED] mt-[100px]">
+        <div class="py-[60px] px-[80px]">
+            <h2 class="font-montagu-slab text-[#094AB7] font-bold text-center text-[30px]">Our Stories</h2>
+            <p class="font-dm-sans text-[18px] text-center mt-[20px]">Twenty Four Seven Consultancy Premier League Twenty
+                Four Seven
+                <br>
+                Consultancy
+                Premier League Twenty Four Seven Consultancy Premier League
+            </p>
+
+            <div class="story_section  py-[30px]">
+                <div class="story_section_box">
+                    <img src="{{ asset('storage/about/ourstory1.png') }}" alt="">
+                    <p class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px]">
+                        Chief Operating Officer: Danish Ather
+                    </p>
+                </div>
+
+                <div class="story_section_box">
+                    <img src="{{ asset('storage/about/ourstory2.png') }}" alt="">
+                    <p class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px]">
+                        Chief Operating Officer: Danish Ather
+                    </p>
+                </div>
+                <div class="story_section_box">
+                    <img src="{{ asset('storage/about/ourstory3.png') }}" alt="">
+                    <p class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px]">
+                        Chief Operating Officer: Danish Ather
+                    </p>
+                </div>
+                <div class="story_section_box">
+                    <img src="{{ asset('storage/about/ourstory3.png') }}" alt="">
+                    <p class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px]">
+                        Chief Operating Officer: Danish Ather
+                    </p>
                 </div>
             </div>
 
         </div>
-    </div> --}}
+
+    </div>
+
+    {{-- tfsc owners --}}
+    <div class="bg-[#094AB7]">
+        <div class="px-[80px] pt-[60px]">
+            <h2 class="font-montagu-slab text-[30px] font-bold text-white">Teams Owners</h2>
+        </div>
+
+        {{-- team owners grid --}}
+        <div class="grid grid-cols-7 pt-[30px] pb-[80px]">
+
+            {{-- emplty grid --}}
+            <div class="col-span-1">
+            </div>
+            {{-- other grid --}}
+            <div class="col-span-6">
+                <div class="owner_section grid grid-cols-4">
+                    {{-- item 1 --}}
+                    <div class="bg-gradient-to-t from-[#221D1D] to-[#003FA9] relative owner_section_box">
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/about/owner1.png') }}" alt="">
+                        </div>
+
+                        <!-- Text over the image -->
+                        <div class="absolute bottom-10 left-10 text-white text-center ">
+                            <h2 class="font-montagu-slab text-[22px] font-bold">Jamshed Arbab Khan</h2>
+                            <p class="text-[14px] font-bold font-dm-sans">Timber Wolves</p>
+                        </div>
+                    </div>
+                    {{-- item 2 --}}
+                    <div class="bg-gradient-to-t from-[#221D1D] to-[#003FA9] relative owner_section_box">
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/about/owner1.png') }}" alt="">
+                        </div>
+
+                        <!-- Text over the image -->
+                        <div class="absolute bottom-10 left-10 text-white text-center ">
+                            <h2 class="font-montagu-slab text-[22px] font-bold">Jamshed Arbab Khan</h2>
+                            <p class="text-[14px] font-bold font-dm-sans">Timber Wolves</p>
+                        </div>
+                    </div>
+                    {{-- item 3 --}}
+                    <div class="bg-gradient-to-t from-[#221D1D] to-[#003FA9] relative owner_section_box">
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/about/owner1.png') }}" alt="">
+                        </div>
+
+                        <!-- Text over the image -->
+                        <div class="absolute bottom-10 left-10 text-white text-center ">
+                            <h2 class="font-montagu-slab text-[22px] font-bold">Jamshed Arbab Khan</h2>
+                            <p class="text-[14px] font-bold font-dm-sans">Timber Wolves</p>
+                        </div>
+                    </div>
+                    {{-- item 4 --}}
+                    <div class="bg-gradient-to-t from-[#221D1D] to-[#003FA9] relative owner_section_box">
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/about/owner1.png') }}" alt="">
+                        </div>
+
+                        <!-- Text over the image -->
+                        <div class="absolute bottom-10 left-10 text-white text-center ">
+                            <h2 class="font-montagu-slab text-[22px] font-bold">Jamshed Arbab Khan</h2>
+                            <p class="text-[14px] font-bold font-dm-sans">Timber Wolves</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-t from-[#221D1D] to-[#003FA9] relative owner_section_box">
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/about/owner1.png') }}" alt="">
+                        </div>
+
+                        <!-- Text over the image -->
+                        <div class="absolute bottom-10 left-10 text-white text-center ">
+                            <h2 class="font-montagu-slab text-[22px] font-bold">Jamshed Arbab Khan</h2>
+                            <p class="text-[14px] font-bold font-dm-sans">Timber Wolves</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {{-- TFSC Premier League Sponsers  --}}
+    <div class="my-[100px] relative">
+        <div>
+            <img src="{{ asset('storage/about/sponsor.png') }}" alt="" class="h-full">
+        </div>
+        <div class="absolute inset-0 bg-white opacity-80"></div>
+        <div class="grid grid-cols-3 py-[60px] absolute top-0">
+            <div></div>
+
+            <div class="">
+                <h2 class="font-montagu-slab text-[#094AB7] font-semibold text-center text-[30px]">TFSC Premier League
+                    Sponsers
+                </h2>
+                <p class="font-dm-sans text-[18px] text-center mt-[20px] leading-[24px]">Twenty Four Seven Consultancy
+                    Premier League
+                    Twenty
+                    Four Seven
+                    <br>
+                    Consultancy
+                    Premier League Twenty Four Seven Consultancy Premier League
+                </p>
+                <div class="absolute left-0 right-0 mt-[40px]">
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+
+                    <div
+                        class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex justify-center gap-[40px] md:gap-[100px] ">
+
+                        <div class="py-[30px] flex justify-center">
+                            <img class="w-[88px] h-[88px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/1.png') }}" alt="KFC" class="object-cover">
+                        </div>
+                        <div class="py-[46px] flex justify-center">
+                            <img class="w-[99px] h-[54px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/2.png') }}" alt="Sports network" class="object-cover">
+                        </div>
+                        <div class="py-[46px] flex justify-center">
+                            <img class="w-[99px] h-[54px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/3.png') }}" alt="BKT" class="object-cover">
+                        </div>
+                        <div class="py-[46px] flex justify-center">
+                            <img class="w-[99px] h-[54px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/4.png') }}" alt="kayo" class="object-cover">
+                        </div>
+
+                    </div>
+
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+
+                    <div
+                        class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex flex-wrap justify-center gap-[40px] md:gap-[100px]">
+
+                        <div class="pt-[40px] pb-[50px] flex justify-center">
+                            <img class="w-[99px] h-[54px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/5.png') }}" alt="Foxtel" class="object-cover">
+                        </div>
+                        <div class="pt-[40px] pb-[50px] flex justify-center">
+                            <img class="w-[99px] h-[54px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/6.png') }}" alt="weber" class="object-cover">
+                        </div>
+
+                    </div>
+
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        $('.management_section').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.story_section').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.owner_section').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            arrows: false,
+            dots: false,
+            margin: 10,
+            // autoplay: true, // Enables auto-scroll
+            autoplaySpeed: 2000, // Speed of auto-scroll      
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
 @endsection

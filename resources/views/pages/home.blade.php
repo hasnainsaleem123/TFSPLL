@@ -1,37 +1,227 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        @media screen and (min-width: 365px) and (max-width: 640px) {
+            .multiple-items>button.slick-next.slick-arrow {
+                display: none;
+            }
+
+            .multiple-items {
+                width: 100%;
+            }
+
+            .box_spaces {
+                margin-top: 15px;
+                margin-right: 0px !important;
+            }
+
+            .multiple-items>.slick-prev {
+                display: none
+            }
+
+
+
+
+
+        }
+
+
+        @media screen and (min-width: 641px) and (max-width: 900px) {
+            .multiple-items>button.slick-next.slick-arrow {
+                background-color: #094AB7;
+                height: 93%;
+                margin-top: 8px;
+            }
+
+            .multiple-items {
+                width: 96%;
+            }
+
+            .box_spaces {
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            .multiple-items>button.slick-next.slick-arrow {
+                margin-right: -0.5% !important;
+                width: 3%;
+            }
+
+            .multiple-items>.slick-prev {
+                display: none
+            }
+
+
+        }
+
+        /* Laptops (901px to 1200px) */
+        @media screen and (min-width: 901px) and (max-width: 1200px) {
+            .multiple-items>button.slick-next.slick-arrow {
+                background-color: #094AB7;
+                height: 93%;
+                margin-top: 8px;
+            }
+
+            .multiple-items {
+                width: 96%;
+            }
+
+            .box_spaces {
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            .multiple-items>button.slick-next.slick-arrow {
+                margin-right: -1.8% !important;
+                width: 3%;
+            }
+
+
+            /* Arrow style */
+            /* .slick-next:before { */
+            .multiple-items>button.:before {
+                content: '';
+                display: block;
+                width: 22px;
+                height: 23px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(-45deg);
+                margin-left: 2px;
+            }
+        }
+
+        /* Laptops (1201px to 1600px) */
+        @media screen and (min-width: 1201px) and (max-width: 1600px) {
+            .multiple-items>button.slick-next.slick-arrow {
+                background-color: #094AB7;
+                height: 93%;
+                margin-top: 8px;
+            }
+
+            .multiple-items {
+                width: 96%;
+            }
+
+            .box_spaces {
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            .multiple-items>button.slick-next.slick-arrow {
+                margin-right: -2.1% !important;
+                width: 3%;
+            }
+
+
+            /* Arrow style */
+            /* .slick-next:before { */
+            .multiple-items>button.:before {
+                content: '';
+                display: block;
+                width: 22px;
+                height: 23px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(-45deg);
+                margin-left: 2px;
+            }
+        }
+
+        /* Large screens (1600px and up) */
+        @media screen and (min-width: 1601px) {
+            .multiple-items>button.slick-next.slick-arrow {
+                background-color: #094AB7;
+                height: 93%;
+                margin-top: 8px;
+            }
+
+            .multiple-items {
+                width: 96%;
+            }
+
+            .box_spaces {
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            .multiple-items>button.slick-next.slick-arrow {
+                margin-right: -2.6% !important;
+                width: 3%;
+
+
+                /* Arrow style */
+                .multiple-items>button.slick-next:before {
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 23px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(-45deg);
+                    margin-left: 2px;
+                }
+
+
+            }
+
+        }
+
+        .magic_moments .magic_boxes {
+            margin: 0 7px;
+        }
+
+        .featured_players .featured_players_box {
+            margin: 0 15px;
+        }
+
+        .highlights_section .highlights_box {
+            padding: 0 7px;
+        }
+
+
+
+        .news_section .news_section_box {
+
+            margin: 15px;
+        }
+
+        .news_section .slick-list {
+            margin: 0 -15px;
+        }
+    </style>
     {{-- site links --}}
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- hero section --}}
     <div class="xl:px-[80px] lg:px-[40px] px-[20px]">
-        <div class="grid  lg:grid-cols-11 gap-[15px] items-start relative">
+        <div class="grid lg:grid-cols-11 gap-[15px] items-start relative">
             {{-- ist grid with video --}}
-            <div class="lg:col-span-7">
+            <div class="lg:col-span-7 relative">
                 <div class="bg-blue-950 relative">
                     <!-- Background image -->
                     <img src="{{ asset('storage/new/vd-bg.png') }}" alt="Background image" class="h-full w-full object-cover">
 
                     <!-- Video Carousel -->
-                    <div id="video-carousel" class="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-[97%] h-full"
+                    <div id="controls-carousel" class="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-[97%] h-full"
                         data-carousel="static">
                         <!-- Carousel wrapper -->
-                        <div class="relative h-full overflow-hidden">
+                        <div class="relative h-full overflow-hidden ">
                             <!-- Item 1 -->
-                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <video autoplay muted loop playsinline class="block w-full h-full object-cover">
                                     <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
-                                    Your browser does not support the video tag.
+
                                 </video>
                             </div>
                             <!-- Item 2 -->
-                            <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                <video autoplay muted loop playsinline class="block w-full h-full object-cover">
-                                    <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                <img src="{{ asset('storage/new/2.png') }}"
+                                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="...">
                             </div>
+
                         </div>
                         <!-- Slider controls -->
                         <button type="button"
@@ -63,29 +253,16 @@
                     </div>
                 </div>
                 <div
-                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white text-center py-[18px] w-full">
+                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white py-[18px] text-center w-full 
+                    
+                    
+                    
+                    
+                    
+                    ">
                     <p>Twenty Four Seven Premier League</p>
                 </div>
             </div>
-            <style>
-                #video-carousel video {
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                }
-
-                #video-carousel .relative {
-                    overflow: hidden;
-                }
-
-                @media (max-width: 768px) {
-                    #video-carousel video {
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
-                }
-            </style>
 
             {{-- 2nd grid --}}
             <div class="lg:col-span-4">
@@ -108,9 +285,11 @@
                                     Details</button>
                             </div>
                         </div>
-                        <div class="flex justify-end">
-                            <img src="{{ asset('storage/new/poster1.png') }}" alt="" class="object-cover">
+                        <div class="flex justify-end h-full">
+                            <img src="{{ asset('storage/new/poster1.png') }}" alt=""
+                                class="object-cover max-h-[337px] w-auto h-full sm:h-[300px] xs:h-[250px]">
                         </div>
+
 
                     </div>
                     <div class="grid grid-cols-3 bg-[#FFF4ED]">
@@ -131,9 +310,11 @@
                                     Details</button>
                             </div>
                         </div>
-                        <div class="flex justify-end">
-                            <img src="{{ asset('storage/new/poster2.png') }}" alt="" class=" object-cover">
+                        <div class="flex justify-end h-full">
+                            <img src="{{ asset('storage/new/poster1.png') }}" alt=""
+                                class="object-cover max-h-[337px] w-auto h-auto sm:h-[300px] xs:h-[250px]">
                         </div>
+
 
                     </div>
 
@@ -158,192 +339,7 @@
             </div>
         </h2>
 
-        <style>
-            @media screen and (min-width: 365px) and (max-width: 640px) {
-                .multiple-items>button.slick-next.slick-arrow {
-                    display: none;
-                }
 
-                .multiple-items {
-                    width: 100%;
-                }
-
-                .box_spaces {
-                    margin-top: 15px;
-                    margin-right: 0px !important;
-                }
-
-                .multiple-items>.slick-prev {
-                    display: none
-                }
-
-
-
-
-
-            }
-
-
-            @media screen and (min-width: 641px) and (max-width: 900px) {
-                .multiple-items>button.slick-next.slick-arrow {
-                    background-color: #094AB7;
-                    height: 93%;
-                    margin-top: 8px;
-                }
-
-                .multiple-items {
-                    width: 96%;
-                }
-
-                .box_spaces {
-                    margin-top: 15px;
-                    margin-right: 15px;
-                }
-
-                .multiple-items>button.slick-next.slick-arrow {
-                    margin-right: -0.5% !important;
-                    width: 3%;
-                }
-
-                .multiple-items>.slick-prev {
-                    display: none
-                }
-
-
-            }
-
-            /* Laptops (901px to 1200px) */
-            @media screen and (min-width: 901px) and (max-width: 1200px) {
-                .multiple-items>button.slick-next.slick-arrow {
-                    background-color: #094AB7;
-                    height: 93%;
-                    margin-top: 8px;
-                }
-
-                .multiple-items {
-                    width: 96%;
-                }
-
-                .box_spaces {
-                    margin-top: 15px;
-                    margin-right: 15px;
-                }
-
-                .multiple-items>button.slick-next.slick-arrow {
-                    margin-right: -1.8% !important;
-                    width: 3%;
-                }
-
-
-                /* Arrow style */
-                /* .slick-next:before { */
-                .multiple-items>button.:before {
-                    content: '';
-                    display: block;
-                    width: 22px;
-                    height: 23px;
-                    border: solid white;
-                    border-width: 0 2px 2px 0;
-                    transform: rotate(-45deg);
-                    margin-left: 2px;
-                }
-            }
-
-            /* Laptops (1201px to 1600px) */
-            @media screen and (min-width: 1201px) and (max-width: 1600px) {
-                .multiple-items>button.slick-next.slick-arrow {
-                    background-color: #094AB7;
-                    height: 93%;
-                    margin-top: 8px;
-                }
-
-                .multiple-items {
-                    width: 96%;
-                }
-
-                .box_spaces {
-                    margin-top: 15px;
-                    margin-right: 15px;
-                }
-
-                .multiple-items>button.slick-next.slick-arrow {
-                    margin-right: -2.1% !important;
-                    width: 3%;
-                }
-
-
-                /* Arrow style */
-                /* .slick-next:before { */
-                .multiple-items>button.:before {
-                    content: '';
-                    display: block;
-                    width: 22px;
-                    height: 23px;
-                    border: solid white;
-                    border-width: 0 2px 2px 0;
-                    transform: rotate(-45deg);
-                    margin-left: 2px;
-                }
-            }
-
-            /* Large screens (1600px and up) */
-            @media screen and (min-width: 1601px) {
-                .multiple-items>button.slick-next.slick-arrow {
-                    background-color: #094AB7;
-                    height: 93%;
-                    margin-top: 8px;
-                }
-
-                .multiple-items {
-                    width: 96%;
-                }
-
-                .box_spaces {
-                    margin-top: 15px;
-                    margin-right: 15px;
-                }
-
-                .multiple-items>button.slick-next.slick-arrow {
-                    margin-right: -2.6% !important;
-                    width: 3%;
-
-
-                    /* Arrow style */
-                    .multiple-items>button.slick-next:before {
-                        content: '';
-                        display: block;
-                        width: 22px;
-                        height: 23px;
-                        border: solid white;
-                        border-width: 0 2px 2px 0;
-                        transform: rotate(-45deg);
-                        margin-left: 2px;
-                    }
-
-
-                }
-
-            }
-
-            .magic_moments .magic_boxes {
-                margin: 0 7px;
-            }
-
-            .featured_players .featured_players_box {
-                margin: 0 15px;
-            }
-
-            .highlights_section .highlights_box {
-                padding: 0 7px;
-            }
-
-
-
-            .news_section .news_section_box {
-
-                margin: 15px;
-            }
-        </style>
         {{-- grids --}}
         {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
         <div class="multiple-items">
@@ -1627,7 +1623,7 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     <!-- Highlights section -->
-    <div class="bg-[#FFF4ED] md:h-full h-[480px] ">
+    <div class="bg-[#FFF4ED] md:h-full h-[536px] ">
         <div
             class="  sm:mt-[20px] md:mt-[80px] lg:mt-[74px]  xl:px-[80px] lg:px-[40px] px-[20px] max-[640px]:mt-[20px] mt-[100px] h-[536px]">
             <div class="flex items-center justify-between ">
@@ -1651,68 +1647,89 @@
             {{-- <div class="grid grid-cols-1 md:grid-cols-4 justify-end gap-[25px] "> --}}
             <div class="highlights_section">
 
+                {{-- 1 --}}
+                <div class="highlights_box">
+                    {{-- ist image --}}
+                    <div class="relative">
+                        <img src="{{ asset('storage/new/worriors.png') }}" alt="Default Image"
+                            class="w-full h-[304px]  transition-opacity duration-300 hover:opacity-0 object-cover ">
 
-                <div class="relative w-full max-h-[304px]   highlights_box">
-                    <!-- Default Image (Visible by Default) -->
-                    <img src="{{ asset('storage/new/worriors.png') }}" alt="Default Image"
-                        class="w-full h-[304px] md:h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
+                        <!-- Hover Image (Hidden by Default, Appears on Hover) -->
+                        <img src="{{ asset('storage/new/h1.png') }}" alt="Hover Image"
+                            class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
-                    <!-- Hover Image (Hidden by Default, Appears on Hover) -->
-                    <img src="{{ asset('storage/new/h1.png') }}" alt="Hover Image"
-                        class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
+                        <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                    <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
-
-                        <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
-                            Umpire’s Controversial Decision</p>
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                                Umpire’s Controversial Decision</p>
+                        </div>
                     </div>
+
                 </div>
+                {{-- 2 --}}
+                <div class="highlights_box">
+                    {{-- ist image --}}
+                    <div class="relative">
+                        <img src="{{ asset('storage/new/invaders.png') }}" alt="Default Image"
+                            class="w-full h-[304px]  transition-opacity duration-300 hover:opacity-0 object-cover ">
 
-                <div class="relative w-full max-h-[304px]  highlights_box">
-                    <!-- Default Image (Visible by Default) -->
-                    <img src="{{ asset('storage/new/invaders.png') }}" alt="Default Image"
-                        class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
+                        <!-- Hover Image (Hidden by Default, Appears on Hover) -->
+                        <img src="{{ asset('storage/new/h2.png') }}" alt="Hover Image"
+                            class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
-                    <!-- Hover Image (Hidden by Default, Appears on Hover) -->
-                    <img src="{{ asset('storage/new/h2.png') }}" alt="Hover Image"
-                        class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
-                    <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
+                        <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                        <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
-                            Umpire’s Controversial Decision</p>
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                                Umpire’s Controversial Decision</p>
+                        </div>
                     </div>
+
                 </div>
-                <div class="relative w-full max-h-[304px]  highlights_box">
-                    <!-- Default Image (Visible by Default) -->
-                    <img src="{{ asset('storage/new/zalmi.png') }}" alt="Default Image"
-                        class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
+                {{-- 3 --}}
+                <div class="highlights_box">
+                    {{-- ist image --}}
+                    <div class="relative">
+                        <img src="{{ asset('storage/new/zalmi.png') }}" alt="Default Image"
+                            class="w-full h-[304px]  transition-opacity duration-300 hover:opacity-0 object-cover ">
 
-                    <!-- Hover Image (Hidden by Default, Appears on Hover) -->
-                    <img src="{{ asset('storage/new/h3.png') }}" alt="Hover Image"
-                        class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
-                    <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
+                        <!-- Hover Image (Hidden by Default, Appears on Hover) -->
+                        <img src="{{ asset('storage/new/h3.png') }}" alt="Hover Image"
+                            class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
-                        <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
-                            Umpire’s Controversial Decision</p>
+                        <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
+
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                                Umpire’s Controversial Decision</p>
+                        </div>
                     </div>
+
                 </div>
-                <div class="relative w-full max-h-[304px]  highlights_box">
-                    <!-- Default Image (Visible by Default) -->
-                    <img src="{{ asset('storage/new/sultan.png') }}" alt="Default Image"
-                        class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
+                {{-- 4 --}}
+                <div class="highlights_box">
+                    {{-- ist image --}}
+                    <div class="relative">
+                        <img src="{{ asset('storage/new/sultan.png') }}" alt="Default Image"
+                            class="w-full h-[304px]  transition-opacity duration-300 hover:opacity-0 object-cover ">
 
-                    <!-- Hover Image (Hidden by Default, Appears on Hover) -->
-                    <img src="{{ asset('storage/new/h4.png') }}" alt="Hover Image"
-                        class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
-                    <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
+                        <!-- Hover Image (Hidden by Default, Appears on Hover) -->
+                        <img src="{{ asset('storage/new/h4.png') }}" alt="Hover Image"
+                            class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
-                        <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
-                            Umpire’s Controversial Decision</p>
+                        <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
+
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                                Umpire’s Controversial Decision</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+
+
         </div>
+
+    </div>
     </div>
 
 
@@ -2296,44 +2313,5 @@
                 handleArrowVisibility();
             });
         });
-
-
-        s document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('#video-carousel [data-carousel-item]');
-            const videos = document.querySelectorAll('#video-carousel video');
-            let current = 0;
-
-            // Play the first video
-            videos[current]?.play();
-
-            function showSlide(index) {
-                items.forEach((item, i) => {
-                    if (i === index) {
-                        item.classList.remove('hidden');
-                        item.setAttribute('data-carousel-item', 'active');
-                        videos[i]?.play();
-                    } else {
-                        item.classList.add('hidden');
-                        item.removeAttribute('data-carousel-item');
-                        videos[i]?.pause();
-                        videos[i].currentTime = 0;
-                    }
-                });
-            }
-
-            // Next Button
-            document.querySelector('[data-carousel-next]').addEventListener('click', () => {
-                current = (current + 1) % items.length;
-                showSlide(current);
-            });
-
-            // Prev Button
-            document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
-                current = (current - 1 + items.length) % items.length;
-                showSlide(current);
-            });
-        });
-    </script>
-
     </script>
 @endsection
