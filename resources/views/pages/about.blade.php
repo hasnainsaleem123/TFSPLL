@@ -16,7 +16,7 @@
         }
     </style>
     {{-- hero section --}}
-    <div class="relative w-full h-full">
+    <div class="relative w-full  h-full">
         <!-- Bottom Image -->
         <img src="{{ asset('storage/about/about1.png') }}" alt="" class="w-full h-full object-cover">
 
@@ -58,6 +58,7 @@
                     <button class=" px-[80px] py-[8px] bg-yellow-400 mt-[30px]">
                         View All
                     </button>
+
                 </div>
 
 
