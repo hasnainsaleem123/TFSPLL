@@ -14,7 +14,8 @@
         <!-- Main Header Flex -->
         <div class="grid grid-cols-4 relative z-20">
             <!-- Left: Logo + Navigation (Logo only visible on small) -->
-            <div class="md:col-span-2 flex items-center justify-between gap-[10px]">
+            <div
+                class="md:col-span-2 flex items-center justify-start 2xl:gap-[51px] xl:gap-[45px] lg:gap-[40px] md:gap-[20px] gap-[20px]">
                 <!-- Logo -->
                 <div class="relative w-[40px] min-w-[40px]">
                     <img src="{{ asset('storage/new/logo.png') }}" alt="Logo" class="w-full h-full">

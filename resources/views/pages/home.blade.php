@@ -169,7 +169,11 @@
         }
 
         .magic_moments .magic_boxes {
-            margin: 0 7px;
+            margin: 15px;
+        }
+
+        .magic-moments .slick-list {
+            margin: 0 -15px;
         }
 
         .featured_players .featured_players_box {
@@ -253,13 +257,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white py-[18px] text-center w-full 
-                    
-                    
-                    
-                    
-                    
-                    ">
+                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white py-[18px] text-center w-full ">
                     <p>Twenty Four Seven Premier League</p>
                 </div>
             </div>
@@ -311,7 +309,7 @@
                             </div>
                         </div>
                         <div class="flex justify-end h-full">
-                            <img src="{{ asset('storage/new/poster1.png') }}" alt=""
+                            <img src="{{ asset('storage/new/poster2.png') }}" alt=""
                                 class="object-cover max-h-[337px] w-auto h-auto sm:h-[300px] xs:h-[250px]">
                         </div>
 
@@ -677,7 +675,9 @@
                 <img src="{{ asset('storage/new/1.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -686,7 +686,9 @@
                 <img src="{{ asset('storage/new/2.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -695,7 +697,9 @@
                 <img src="{{ asset('storage/new/3.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -704,7 +708,9 @@
                 <img src="{{ asset('storage/new/4.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -713,7 +719,9 @@
                 <img src="{{ asset('storage/new/5.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -722,7 +730,9 @@
                 <img src="{{ asset('storage/new/3.png') }}" alt=""
                     class="w-full h-[290px] md:h-auto object-cover">
                 <div class="bg-[#094AB7]">
-                    <p class="text-white pl-[16px] py-[22px] ">Winning team celebration moments</p>
+                    <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
+                        team
+                        celebration moments</p>
 
                 </div>
             </div>
@@ -2217,7 +2227,7 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 4,
-            arrows: true,
+            arrows: false,
             dots: false,
             margin: 10,
             // autoplay: true, // Enables auto-scroll
@@ -2242,7 +2252,7 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 4,
-            arrows: true,
+            arrows: false,
             dots: false,
             margin: 10,
             // autoplay: true, // Enables auto-scroll
@@ -2267,7 +2277,7 @@
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 4,
-            arrows: true,
+            arrows: false,
             dots: false,
             margin: 10,
             // autoplay: true, // Enables auto-scroll
