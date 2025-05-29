@@ -167,33 +167,6 @@
             }
 
         }
-
-        .magic_moments .magic_boxes {
-            margin: 15px;
-        }
-
-        .magic-moments .slick-list {
-            margin: 0 -15px;
-        }
-
-        .featured_players .featured_players_box {
-            margin: 0 15px;
-        }
-
-        .highlights_section .highlights_box {
-            padding: 0 7px;
-        }
-
-
-
-        .news_section .news_section_box {
-
-            margin: 15px;
-        }
-
-        .news_section .slick-list {
-            margin: 0 -15px;
-        }
     </style>
     {{-- site links --}}
 
@@ -327,25 +300,22 @@
     {{-- ////////////////////////////////////////////////////////////////// --}}
     <!-- Upcoming matches section -->
     <div class="xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[30px]">
-        <h2
-            class="bg-[#094AB7] pt-[6px] pb-[8px] px-[20px] md:pl-[50px] text-white 2xl:text-[30px] lg:text-[24px] md:text-[20px] text-[18px] font-bold font-montagu-slab flex justify-between">
-            Upcoming Matches
-            <div class="flex items-center space-x-[22px] md:hidden">
-                <img src="{{ asset('storage/new/l.svg') }}" alt="">
-                <img src="{{ asset('storage/new/r.svg') }}" alt="">
-
-            </div>
-        </h2>
+        <div class="lg:mb-[50px] mb-[30px] px-[5px]">
+            <h2
+                class="bg-[#094AB7] pt-[6px] pb-[8px] px-[20px] md:pl-[50px] text-white 2xl:text-[30px] lg:text-[24px] md:text-[20px] text-[18px] font-bold font-montagu-slab flex justify-between">
+                Upcoming Matches
+            </h2>
+        </div>
 
 
         {{-- grids --}}
         {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-[8px] pt-[25px] gap-[25px] "> --}}
         <div class="multiple-items">
             {{-- Match Cards 1 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40" fill="none"
@@ -370,7 +340,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -394,10 +364,10 @@
                 </div>
             </div>
             {{-- Match Cards 2 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
@@ -422,7 +392,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -446,10 +416,10 @@
                 </div>
             </div>
             {{-- Match Cards 3 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
@@ -474,7 +444,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -498,10 +468,10 @@
                 </div>
             </div>
             {{-- Match Cards 4 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
@@ -526,7 +496,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -548,13 +518,12 @@
                         Match 12 - Pindi Cricket Stadium
                     </p>
                 </div>
-                {{-- </div> --}}
             </div>
             {{-- Match Cards 5 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
@@ -579,7 +548,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -601,13 +570,12 @@
                         Match 12 - Pindi Cricket Stadium
                     </p>
                 </div>
-                {{-- </div> --}}
             </div>
             {{-- Match Cards 6 --}}
-            <div class="overflow-hidden border-2 border-[#DDDDDD] box_spaces">
+            <div class="overflow-hidden border-2 border-[#DDDDDD] md:mr-[20px] mx-[5px]">
                 {{-- First Section --}}
-                <div class="flex items-center justify-between px-[20px] py-[20px]">
-                    <p class="my-0 text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
+                <div class="flex items-center justify-between 2xl:px-[40px] px-[10px]  py-[20px]">
+                    <p class="my-0  text-[16px] font-dm-sans font-bold text-[#00000] max-[1199px]:text-[11px]">
                         03 Nov 2024 - 10:00 am
                     </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40"
@@ -632,7 +600,7 @@
                     </div>
 
                     <!-- VS -->
-                    <div class="px-[30px] py-[30px] max-[1199px]:px-[15px] max-[1199px]:py-[15px] text-center">
+                    <div class="2xl:px-[30px] 2xl:py-[30px]  text-center">
                         <p class="my-0 text-[25px] max-[1199px]:text-[12px] font-medium text-[#000] font-moul">vs</p>
                     </div>
 
@@ -654,7 +622,6 @@
                         Match 12 - Pindi Cricket Stadium
                     </p>
                 </div>
-                {{-- </div> --}}
             </div>
         </div>
 
@@ -664,16 +631,16 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- magic moments --}}
-    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[10px] ">
-        <h2 class="text-[#094AB7] xl:text-[30px] lg:text-[23px] text-[18px] font-bold font-montagu-slab">
+    <div class=" xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[55px] pt-[30px] ">
+        <h2
+            class="text-[#094AB7] xl:text-[30px] lg:text-[23px] text-[18px] font-bold font-montagu-slab mb-[20px] xl:mb-[50px]">
             Magic Moments
         </h2>
-        <div class="magic_moments">
+        <div class="magic_moments  overflow-hidden">
             {{-- grid --}}
             {{-- ist --}}
-            <div class="magic_boxes">
-                <img src="{{ asset('storage/new/1.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full mx-[5px] overflow-hidden">
+                <img src="{{ asset('storage/new/1.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -682,9 +649,8 @@
                 </div>
             </div>
             {{-- 2nd --}}
-            <div class="max-[768px]:hidden magic_boxes">
-                <img src="{{ asset('storage/new/2.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full mx-[5px] relative">
+                <img src="{{ asset('storage/new/2.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -693,9 +659,8 @@
                 </div>
             </div>
             {{-- 3rd --}}
-            <div class="max-[768px]:hidden magic_boxes">
-                <img src="{{ asset('storage/new/3.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full mx-[5px]">
+                <img src="{{ asset('storage/new/3.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -704,9 +669,8 @@
                 </div>
             </div>
             {{-- 4th --}}
-            <div class="max-[768px]:hidden magic_boxes">
-                <img src="{{ asset('storage/new/4.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full object-cover mx-[5px]">
+                <img src="{{ asset('storage/new/4.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -715,9 +679,8 @@
                 </div>
             </div>
             {{-- 5th --}}
-            <div class="max-[768px]:hidden magic_boxes">
-                <img src="{{ asset('storage/new/5.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full mx-[5px]">
+                <img src="{{ asset('storage/new/5.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -726,9 +689,8 @@
                 </div>
             </div>
             {{-- 3rd --}}
-            <div class="max-[768px]:hidden magic_boxes">
-                <img src="{{ asset('storage/new/3.png') }}" alt=""
-                    class="w-full h-[290px] md:h-auto object-cover">
+            <div class="magic_boxes w-full h-full mx-[5px]">
+                <img src="{{ asset('storage/new/3.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
                         team
@@ -1635,14 +1597,14 @@
     <!-- Highlights section -->
     <div class="bg-[#FFF4ED] md:h-full h-[536px] ">
         <div
-            class="  sm:mt-[20px] md:mt-[80px] lg:mt-[74px]  xl:px-[80px] lg:px-[40px] px-[20px] max-[640px]:mt-[20px] mt-[100px] h-[536px]">
-            <div class="flex items-center justify-between ">
+            class="  sm:mt-[20px] md:mt-[80px] lg:mt-[74px]  xl:px-[80px] px-[20px] max-[640px]:mt-[20px] mt-[100px] h-[536px]">
+            <div class="flex items-center justify-between ml-2 xl:ml-0 ">
                 <h2
-                    class="md:py-[36px] md:pl-[24px] text-[#094AB7] xl:text-[24px] lg:text-[20px] text-[18px] font-bold font-montagu-slab ">
+                    class="md:py-[36px] text-[#094AB7] xl:text-[24px] lg:text-[20px] text-[18px] font-bold font-montagu-slab ">
                     Highlights
                 </h2>
 
-                <div class="py-[36px] md:pr-[20px]">
+                <div class="py-[36px] xl:pr-[20px] pr-[15px]">
                     <a href="/teams">
                         <button id="btn"
                             class="px-[23px] md:px-[35px] md:py-[9px] py-[5px] bg-yellow-400 text-[10px] md:text-[14px] text-white font-dm-sans cursor-pointer ">
@@ -1658,15 +1620,15 @@
             <div class="highlights_section">
 
                 {{-- 1 --}}
-                <div class="highlights_box">
+                <div class="highlights_box xl:mr-[20px] xl:mx-0 mx-[10px]">
                     {{-- ist image --}}
-                    <div class="relative">
+                    <div class="relative w-full h-[304px]">
                         <img src="{{ asset('storage/new/worriors.png') }}" alt="Default Image"
-                            class="w-full h-[304px]  transition-opacity duration-300 hover:opacity-0 object-cover ">
+                            class="w-full h-full transition-opacity duration-300 hover:opacity-0 object-cover ">
 
                         <!-- Hover Image (Hidden by Default, Appears on Hover) -->
                         <img src="{{ asset('storage/new/h1.png') }}" alt="Hover Image"
-                            class="absolute inset-0 w-full h-[304px] opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
+                            class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100 object-cover">
 
                         <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
@@ -1677,7 +1639,7 @@
 
                 </div>
                 {{-- 2 --}}
-                <div class="highlights_box">
+                <div class="highlights_box xl:mr-[20px] xl:mx-0 mx-[10px]">
                     {{-- ist image --}}
                     <div class="relative">
                         <img src="{{ asset('storage/new/invaders.png') }}" alt="Default Image"
@@ -1696,7 +1658,7 @@
 
                 </div>
                 {{-- 3 --}}
-                <div class="highlights_box">
+                <div class="highlights_box xl:mr-[20px] xl:mx-0 mx-[10px]">
                     {{-- ist image --}}
                     <div class="relative">
                         <img src="{{ asset('storage/new/zalmi.png') }}" alt="Default Image"
@@ -1715,7 +1677,7 @@
 
                 </div>
                 {{-- 4 --}}
-                <div class="highlights_box">
+                <div class="highlights_box xl:mr-[20px] xl:mx-0 mx-[10px]">
                     {{-- ist image --}}
                     <div class="relative">
                         <img src="{{ asset('storage/new/sultan.png') }}" alt="Default Image"
@@ -1745,7 +1707,7 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- Featured Players  --}}
-    <div class="w-[95%] mx-auto xl:px-[80px] lg:px-[40px] px-[20px] pt-[30px]">
+    <div class="w-[95%] mx-auto xl:px-[80px] lg:px-[40px] px-[20px] pt-[30px] lg:pt-[100px]">
         <h3
             class="font-montagu-slab text-[18px] xl:text-[30px] lg:text-[24px] md:text-[22px] font-bold leading-[46px] pb-[20px] md:pb-[50px] text-[#094AB7]">
             Featured Players</h3>
@@ -1753,7 +1715,7 @@
         {{-- <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-[30px] "> --}}
         <div class="featured_players">
             {{-- ist --}}
-            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] xl:mr-[30px] xl:mx-0 mx-[10px]">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1800,7 +1762,7 @@
 
             </div>
             {{-- 2nd --}}
-            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] xl:mr-[30px] xl:mx-0 mx-[10px]">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1847,7 +1809,7 @@
 
             </div>
             {{-- 3rd --}}
-            <div class=" bg-[#FFF4ED]  max-[640px]:hidden featured_players_box">
+            <div class=" bg-[#FFF4ED]  max-[640px]:hidden xl:mr-[30px] xl:mx-0 mx-[10px]">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1894,7 +1856,7 @@
 
             </div>
             {{-- 4th --}}
-            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] featured_players_box">
+            <div class=" bg-[#FFF4ED] border border-[#F4F4F4] xl:mr-[30px] xl:mx-0 mx-[10px]">
                 <div class=" grid grid-cols-5">
                     <div class="col-span-2">
                         <div class="flex flex-col justify-center items-center">
@@ -1949,11 +1911,11 @@
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
     <!--Latest  News Section -->
-    <div class="xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[100px] pt-[30px]">
+    <div class="xl:px-[80px] lg:px-[40px] px-[20px] md:pt-[100px] pt-[30px] ">
         <!-- News Header -->
-        <div class="bg-[#094AB7] flex items-center justify-between">
+        <div class="bg-[#094AB7] flex items-center justify-between mb-[30px] md:mb-[50px] mx-[10px]">
             <h2
-                class="py-[12px] px-1 md:pl-[50px] text-white xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px]  font-bold font-Montserrat">
+                class="py-[12px] px-1 md:pl-[50px] text-white xl:text-[24px] lg:text-[22px] md:text-[20px] text-[18px] font-bold font-Montserrat">
                 Latest News
             </h2>
             <div class="2xl:py-[13px] pr-1 md:pr-[20px] sm:py-[6px]">
@@ -1971,7 +1933,7 @@
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:py-[25px] lg:py-[12px] sm:py-[20px] min-[365px]:py-[12px] xl:gap-[22px] lg:gap-[10px] md:gap-[10px] min-[365px]:gap-[10px]"> --}}
         <div class="news_section">
             <!-- News Item -->
-            <div class="relative group overflow-hidden news_section_box">
+            <div class="relative group overflow-hidden mx-[10px]">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -1994,7 +1956,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
+            <div class="relative group overflow-hidden mx-[10px]">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -2017,7 +1979,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
+            <div class="relative group overflow-hidden mx-[10px]">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -2040,7 +2002,7 @@
                 </div>
             </div>
             <!-- News Item -->
-            <div class="relative group overflow-hidden max-[640px]:hidden news_section_box">
+            <div class="relative group overflow-hidden mx-[10px]">
                 <!-- Image -->
                 <img src="{{ asset('storage/News/n1.png') }}" alt="news"
                     class="w-full transition-all duration-500 group-hover:scale-110">
@@ -2122,6 +2084,8 @@
         <div class="border-b border-b-[#808080]"></div>
 
     </div>
+
+
     <script>
         $('.events-slider').on('edge', function(event, slick, direction) {
             //Edge: last slide of the slider when infinity=false
@@ -2181,6 +2145,8 @@
             arrows: true,
             dots: false,
             margin: 10,
+            prevArrow: $('.slick-prev'),
+            nextArrow: $('.slick-next'),
             responsive: [{
                     breakpoint: 1024,
                     settings: {
@@ -2200,24 +2166,37 @@
 
         $('.magic_moments').slick({
             infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 4,
+            slidesToShow: 6,
+            slidesToScroll: 1,
             arrows: true,
             dots: false,
             margin: 10,
             // autoplay: true, // Enables auto-scroll
             autoplaySpeed: 2000, // Speed of auto-scroll      
             responsive: [{
-                    breakpoint: 1024,
+                    breakpoint: 1440,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 5,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 765,
+                    settings: {
+                        slidesToShow: 3,
                         slidesToScroll: 2
                     }
                 },
                 {
                     breakpoint: 640,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 }

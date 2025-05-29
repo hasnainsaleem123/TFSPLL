@@ -2,10 +2,13 @@
 
 @section('content')
     <!-- Header Section -->
-    <div class="h-[300px]  bg-[#05055a] relative flex justify-center items-center ">
-        <img src="{{ asset('storage/T/bgt.png') }}" alt=""
-            class="h-[300px]  absolute left-0 right-0 bottom-0 w-full object-cover">
-        <h2 class="text-white text-[50px] font-montserrat font-bold relative z-10">Teams</h2>
+    <div class="md:h-[300px] h-[100px] relative flex justify-center items-center overflow-hidden ">
+        <img src="{{ asset('storage/matches/bg1.png') }}" alt=""
+            class="h-[300px]  absolute left-0 right-0 bottom-0 w-full object-cover overflow-hidden">
+        <h2
+            class="text-white 2xl:text-[50px] xl:text-[40px] lg:text-[30px] sm:text-[20px] text-[18px] font-montagu-slab font-bold relative">
+            Teams
+        </h2>
     </div>
     {{-- ist section --}}
     <div class="2xl:px-[180px] xl:px-[120px] lg:px-[70px] pt-[47px]">

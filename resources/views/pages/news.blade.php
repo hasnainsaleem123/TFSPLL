@@ -3,9 +3,13 @@
 
 @section('content')
     <!-- Header Section -->
-    <div class="h-[300px] flex flex-col justify-center items-center mb-10 relative">
-        <img src="{{ asset('storage/newspage/bg.png') }}" alt="" class="absolute w-full inset-0 h-full ">
-        <h2 class="text-white text-[50px] font-bold relative">News</h2>
+    <div class="md:h-[300px] h-[100px] relative flex justify-center items-center overflow-hidden ">
+        <img src="{{ asset('storage/matches/bg1.png') }}" alt=""
+            class="h-[300px]  absolute left-0 right-0 bottom-0 w-full object-cover overflow-hidden">
+        <h2
+            class="text-white 2xl:text-[50px] xl:text-[40px] lg:text-[30px] sm:text-[20px] text-[18px] font-montagu-slab font-bold relative">
+            News
+        </h2>
     </div>
 
     {{-- images grid --}}
