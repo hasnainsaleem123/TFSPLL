@@ -256,9 +256,9 @@
                                     Details</button>
                             </div>
                         </div>
-                        <div class="flex justify-end h-full">
+                        <div class="flex justify-end w-full h-[337px]">
                             <img src="{{ asset('storage/new/poster1.png') }}" alt=""
-                                class="object-cover max-h-[337px] w-auto h-full sm:h-[300px] xs:h-[250px]">
+                                class="object-cover w-full h-full">
                         </div>
 
 
@@ -281,9 +281,9 @@
                                     Details</button>
                             </div>
                         </div>
-                        <div class="flex justify-end h-full">
+                        <div class="flex justify-end w-full h-">
                             <img src="{{ asset('storage/new/poster2.png') }}" alt=""
-                                class="object-cover max-h-[337px] w-auto h-auto sm:h-[300px] xs:h-[250px]">
+                                class="object-cover w-full h-full">
                         </div>
 
 

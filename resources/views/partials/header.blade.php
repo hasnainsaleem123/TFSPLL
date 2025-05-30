@@ -30,13 +30,13 @@
                             </li>
                             <li class="relative group cursor-pointer hover:text-gray-300"><a href="/about">About</a>
                             </li>
-                            <li class="relative group cursor-pointer hover:text-gray-300"><a href="/matches">Teams</a>
+                            <li class="relative group cursor-pointer hover:text-gray-300"><a href="/teams">Teams</a>
                             </li>
                             <li class="relative group cursor-pointer hover:text-gray-300"><a
                                     href="/ranking">Rankings</a>
                             </li>
                             <li class="relative group cursor-pointer hover:text-gray-300"><a
-                                    href="/ranking">Fixtures</a>
+                                    href="/matches">Fixtures</a>
                             </li>
                             <li class="relative group cursor-pointer hover:text-gray-300"><a href="/ranking">Top
                                     Fans</a>

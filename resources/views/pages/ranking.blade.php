@@ -2,13 +2,18 @@
 
 @section('content')
     <!-- Header Section -->
-    <div class="h-[300px] bg-[#094AB7] flex flex-col justify-center items-center mb-10 relative">
-        {{-- <img src="{{ asset('storage/ranking/bg.png') }}" alt="" class="absolute w-full inset-0 h-full "> --}}
-        <h2 class="text-white text-[50px] font-bold relative">Rankings</h2>
+    <div class="md:h-[300px] h-[100px] relative flex justify-center items-center overflow-hidden mb-10">
+        <img src="{{ asset('storage/matches/bg1.png') }}" alt=""
+            class="h-[300px]  absolute left-0 right-0 bottom-0 w-full object-cover overflow-hidden">
+        <h2
+            class="text-white 2xl:text-[50px] xl:text-[40px] lg:text-[30px] sm:text-[20px] text-[18px] font-montagu-slab font-bold relative">
+            Rankings
+        </h2>
     </div>
 
     {{-- ist section --}}
-    <div class="2xl:px-[80px] xl:px-[60px] md:px-[40px] px-[16px] h-[484px] mb-[60px]">
+    <div
+        class="xl:w-[84%] mx-auto 2xl:px-[180px] xl:px-[120px] min-[1000px]:px-[90px] md:px-[20px] px-[16px] lg:w-[88%] w-[94%] h-[484px] mb-[60px]">
         {{-- team ranking --}}
         <div class="  bg-[#094AB7] mb-5">
             <h1 class="md:text-[24px] sm:text-[20px] text-[15px] font-bold font-montserrat px-5 py-3.5 text-white ">
@@ -165,7 +170,8 @@
     </div>
 
     {{-- 2nd section --}}
-    <div class="2xl:px-[80px] xl:px-[60px] md:px-[40px] px-[16px] h-[484px] mb-[60px]">
+    <div
+        class="xl:w-[84%] mx-auto 2xl:px-[180px] xl:px-[120px] min-[1000px]:px-[90px] md:px-[20px] px-[16px] lg:w-[88%] w-[94%] h-[484px] mb-[60px]">
         {{-- team ranking --}}
         <div class="  bg-[#094AB7] mb-5">
             <h1 class="md:text-[24px] sm:text-[20px] text-[15px] font-bold font-montserrat px-5 py-3.5 text-white ">

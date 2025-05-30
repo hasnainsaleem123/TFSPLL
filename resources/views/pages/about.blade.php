@@ -3,12 +3,11 @@
 
 @section('content')
     <style>
-        .management_section .management_section_box,
         .story_section .story_section_box {
             margin: 15px;
         }
 
-        .management_section .slick-list,
+
         .story_section .slick-list {
             margin: 0 -15px;
 
@@ -91,10 +90,10 @@
 
 
 
-                <div class="lg:col-span-6 ">
+                <div class="lg:col-span-6 lg:mt-3 xl:mt-0 mt-[20px]">
                     <div class="management_section  ">
 
-                        <div class="relative management_section_box">
+                        <div class="relative lg:mx-[12px] mx-[5px]">
                             <img src="{{ asset('storage/about/danish.png') }}" alt=""
                                 class="w-full h-full object-cover">
                             <p
@@ -106,7 +105,7 @@
 
                             </p>
                         </div>
-                        <div class="relative management_section_box">
+                        <div class="relative lg:mx-[12px] mx-[5px]">
                             <img src="{{ asset('storage/about/muzahir.png') }}" alt=""
                                 class="w-full h-full object-cover">
                             <p
@@ -117,7 +116,7 @@
 
                             </p>
                         </div>
-                        <div class="relative management_section_box">
+                        <div class="relative lg:mx-[12px] mx-[5px]">
                             <img src="{{ asset('storage/about/salman.png') }}" alt=""
                                 class="w-full h-full object-cover">
                             <p
@@ -127,7 +126,7 @@
                                 Muhammad Sulaman
                             </p>
                         </div>
-                        <div class="relative management_section_box">
+                        <div class="relative lg:mx-[12px] mx-[5px]">
                             <img src="{{ asset('storage/about/salman.png') }}" alt=""
                                 class="w-full h-full object-cover">
                             <p
@@ -239,32 +238,44 @@
             </p>
 
             <div class="story_section  lg:py-[30px] py-[10px]">
-                <div class="story_section_box">
-                    <img src="{{ asset('storage/about/ourstory1.png') }}" alt="">
+                <div class="mx-[15px]">
+                    <div class="w-full sm:h-full h-[373px]">
+                        <img src="{{ asset('storage/about/ourstory1.png') }}" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
                     <p
                         class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
                         Chief Operating Officer: Danish Ather
                     </p>
                 </div>
 
-                <div class="story_section_box">
-                    <img src="{{ asset('storage/about/ourstory2.png') }}" alt="">
+                <div class="mx-[15px]">
+                    <div class="w-full sm:h-full h-[373px]">
+                        <img src="{{ asset('storage/about/ourstory1.png') }}" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
                     <p
                         class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
                         Chief Operating Officer: Danish Ather
                     </p>
                 </div>
-                <div class="story_section_box">
-                    <img src="{{ asset('storage/about/ourstory3.png') }}" alt="">
+                <div class="mx-[15px]">
+                    <div class="w-full sm:h-full h-[373px]">
+                        <img src="{{ asset('storage/about/ourstory1.png') }}" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
                     <p
                         class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
                         Chief Operating Officer: Danish Ather
                     </p>
                 </div>
-                <div class="story_section_box">
-                    <img src="{{ asset('storage/about/ourstory3.png') }}" alt="">
+                <div class="mx-[15px]">
+                    <div class="w-full sm:h-full h-[373px]">
+                        <img src="{{ asset('storage/about/ourstory1.png') }}" alt=""
+                            class="w-full h-full object-cover">
+                    </div>
                     <p
-                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[10px] text-[14px] font-montagu-slab">
+                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
                         Chief Operating Officer: Danish Ather
                     </p>
                 </div>
