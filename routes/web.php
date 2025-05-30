@@ -27,3 +27,6 @@ Route::get('newpage', function () {
 Route::get('dhd', function () {
     return view('pages.dhd');
 });
+Route::get('players', function () {
+    return view('pages.players');
+});

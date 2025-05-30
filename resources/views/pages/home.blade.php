@@ -173,10 +173,10 @@
     {{-- ////////////////////////////////////////////////////////////////// --}}
     {{-- hero section --}}
     <div class="xl:px-[80px] lg:px-[40px] px-[20px]">
-        <div class="grid lg:grid-cols-11 gap-[15px] items-start relative">
-            {{-- ist grid with video --}}
-            <div class="lg:col-span-7 relative">
-                <div class="bg-blue-950 relative">
+        <div class="relative lg:flex lg:items-stretch gap-[15px]">
+            {{-- 1st grid with video --}}
+            <div class="lg:w-[63.63%] relative flex flex-col">
+                <div class="bg-blue-950 relative h-full">
                     <!-- Background image -->
                     <img src="{{ asset('storage/new/vd-bg.png') }}" alt="Background image" class="h-full w-full object-cover">
 
@@ -184,12 +184,11 @@
                     <div id="controls-carousel" class="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-[97%] h-full"
                         data-carousel="static">
                         <!-- Carousel wrapper -->
-                        <div class="relative h-full overflow-hidden ">
+                        <div class="relative h-full overflow-hidden">
                             <!-- Item 1 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <video autoplay muted loop playsinline class="block w-full h-full object-cover">
                                     <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
-
                                 </video>
                             </div>
                             <!-- Item 2 -->
@@ -198,7 +197,6 @@
                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
-
                         </div>
                         <!-- Slider controls -->
                         <button type="button"
@@ -230,13 +228,13 @@
                     </div>
                 </div>
                 <div
-                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white py-[18px] text-center w-full ">
+                    class="bg-[#094AB7] font-montagu-slab font-bold text-[18px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] text-white py-[18px] text-center w-full">
                     <p>Twenty Four Seven Premier League</p>
                 </div>
             </div>
 
             {{-- 2nd grid --}}
-            <div class="lg:col-span-4">
+            <div class="lg:w-[36.36%] flex flex-col">
                 <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-[15px] md:px-[0px] md:w-full max-w-[1122px]">
                     {{-- 1st --}}
                     <div class="grid grid-cols-3 bg-[#FFF4ED]">
@@ -252,7 +250,7 @@
                                 League</p>
                             <div class="bg-[#094AB7] w-fit">
                                 <button
-                                    class="text-center text-white text-[10px] 2xl:text-[14px] xl:text-[12px] lg:text-[10px] font-dm-sans px-[35px] 2xl:px-[79px] xl:px-[50px] lg:px-[40px] py-[5px] md:py-[10px] ">View
+                                    class="text-center text-white text-[10px] 2xl:text-[14px] xl:text-[12px] lg:text-[10px] font-dm-sans px-[35px] 2xl:px-[79px] xl:px-[50px] lg:px-[40px] py-[5px] md:py-[10px]">View
                                     Details</button>
                             </div>
                         </div>
@@ -260,12 +258,12 @@
                             <img src="{{ asset('storage/new/poster1.png') }}" alt=""
                                 class="object-cover w-full h-full">
                         </div>
-
-
                     </div>
+
+                    {{-- 2nd --}}
                     <div class="grid grid-cols-3 bg-[#FFF4ED]">
                         <div
-                            class="col-span-2 flex flex-col justify-center font-montserrat pl-[44px] lg:pl-10 2xl:pl-[44px] ">
+                            class="col-span-2 flex flex-col justify-center font-montserrat pl-[44px] lg:pl-10 2xl:pl-[44px]">
                             <p
                                 class="text-[14px] 2xl:text-[20px] xl:text-[17px] font-bold  text-[#094AB7] font-montserrat md:leading-[22px]">
                                 TFS Premier
@@ -281,20 +279,17 @@
                                     Details</button>
                             </div>
                         </div>
-                        <div class="flex justify-end w-full h-">
+                        <div class="flex justify-end w-full">
                             <img src="{{ asset('storage/new/poster2.png') }}" alt=""
                                 class="object-cover w-full h-full">
                         </div>
-
-
                     </div>
 
                 </div>
-
             </div>
-
         </div>
     </div>
+
 
 
     {{-- ////////////////////////////////////////////////////////////////// --}}
@@ -1632,7 +1627,8 @@
 
                         <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] text-[14px] font-montserrat font-bold ">
+                                Tom Got Heated After an
                                 Umpire’s Controversial Decision</p>
                         </div>
                     </div>
@@ -1651,7 +1647,8 @@
 
                         <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] text-[14px] font-montserrat font-bold ">
+                                Tom Got Heated After an
                                 Umpire’s Controversial Decision</p>
                         </div>
                     </div>
@@ -1670,7 +1667,8 @@
 
                         <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] text-[14px] font-montserrat font-bold ">
+                                Tom Got Heated After an
                                 Umpire’s Controversial Decision</p>
                         </div>
                     </div>
@@ -1689,7 +1687,8 @@
 
                         <div class=" text-black font-montserrat z-10 pt-[27px] pb-[43px]">
 
-                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] font-bold ">Tom Got Heated After an
+                            <p class="2xl:text-[16px] xl:text-[13px] lg:text-[9px] text-[14px] font-montserrat font-bold ">
+                                Tom Got Heated After an
                                 Umpire’s Controversial Decision</p>
                         </div>
                     </div>
@@ -2141,7 +2140,7 @@
         $('.multiple-items').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             arrows: true,
             dots: false,
             margin: 10,
@@ -2151,7 +2150,7 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -2183,14 +2182,14 @@
                     breakpoint: 1280,
                     settings: {
                         slidesToShow: 4,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
                     breakpoint: 765,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -2205,7 +2204,7 @@
         $('.highlights_section').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             arrows: false,
             dots: false,
             margin: 10,
@@ -2215,7 +2214,7 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -2230,7 +2229,7 @@
         $('.featured_players').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             arrows: false,
             dots: false,
             margin: 10,
@@ -2240,7 +2239,7 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
@@ -2255,7 +2254,7 @@
         $('.news_section').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             arrows: false,
             dots: false,
             margin: 10,
@@ -2265,7 +2264,7 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 1
                     }
                 },
                 {
