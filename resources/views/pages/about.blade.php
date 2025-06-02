@@ -244,9 +244,19 @@
                             class="w-full h-full object-cover">
                     </div>
                     <p
-                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
-                        Chief Operating Officer: Danish Ather
-                    </p>
+                        class="absolute bottom-14  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
+                        Chief Operating Officer: Danish Ather</p>
+
+                    <div class="flex px-[20px] gap-[52px] bottom-7 absolute">
+
+                        <div class="flex gap-2 items-center">
+                            <span class="w-[8px] h-[8px] bg-[#F6C200] inline-block"></span>
+                            <span class="font-bold text-[#F6C200] text-[16px] font-montagu-slab">Feature</span>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-montagu-slab font-bold text-white">12 Jan 2025</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mx-[15px]">
@@ -255,9 +265,19 @@
                             class="w-full h-full object-cover">
                     </div>
                     <p
-                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
-                        Chief Operating Officer: Danish Ather
-                    </p>
+                        class="absolute bottom-14  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
+                        Chief Operating Officer: Danish Ather</p>
+
+                    <div class="flex px-[20px] gap-[52px] bottom-7 absolute">
+
+                        <div class="flex gap-2 items-center">
+                            <span class="w-[8px] h-[8px] bg-[#F6C200] inline-block"></span>
+                            <span class="font-bold text-[#F6C200] text-[16px] font-montagu-slab">Feature</span>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-montagu-slab font-bold text-white">12 Jan 2025</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="mx-[15px]">
                     <div class="w-full sm:h-full h-[373px]">
@@ -265,9 +285,20 @@
                             class="w-full h-full object-cover">
                     </div>
                     <p
-                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
-                        Chief Operating Officer: Danish Ather
-                    </p>
+                        class="absolute bottom-14  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
+                        Chief Operating Officer: Danish Ather</p>
+
+                    <div class="flex px-[20px] gap-[52px] bottom-7 absolute">
+
+                        <div class="flex gap-2 items-center">
+                            <span class="w-[8px] h-[8px] bg-[#F6C200] inline-block"></span>
+                            <span class="font-bold text-[#F6C200] text-[16px] font-montagu-slab">Feature</span>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-montagu-slab font-bold text-white">12 Jan 2025</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="mx-[15px]">
                     <div class="w-full sm:h-full h-[373px]">
@@ -275,9 +306,19 @@
                             class="w-full h-full object-cover">
                     </div>
                     <p
-                        class="absolute bottom-12  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
-                        Chief Operating Officer: Danish Ather
-                    </p>
+                        class="absolute bottom-14  text-[#F6C200] text-lg font-semibold px-[20px] 2xl:text-[18px] lg:text-[13px] sm:text-[12px] text-[14px] font-montagu-slab">
+                        Chief Operating Officer: Danish Ather</p>
+
+                    <div class="flex px-[20px] gap-[52px] bottom-7 absolute">
+
+                        <div class="flex gap-2 items-center">
+                            <span class="w-[8px] h-[8px] bg-[#F6C200] inline-block"></span>
+                            <span class="font-bold text-[#F6C200] text-[16px] font-montagu-slab">Feature</span>
+                        </div>
+                        <div>
+                            <p class="text-[16px] font-montagu-slab font-bold text-white">12 Jan 2025</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -381,7 +422,7 @@
     <div class="lg:my-[100px] my-[30px] relative">
         <div>
             <img src="{{ asset('storage/about/sponsor.png') }}" alt=""
-                class="lg:h-[644px] h-[530px] w-full object-cover">
+                class="lg:h-[644px] md:h-[450px] sm:h-[430px] h-[400px] w-full object-cover">
         </div>
         <div class="absolute inset-0 bg-white opacity-80"></div>
         <div class="grid grid-cols-1 xl:grid-cols-3 lg:py-[60px] py-[30px] absolute inset-0">
@@ -410,21 +451,25 @@
                     <div
                         class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex justify-center gap-[40px] md:gap-[100px] ">
 
-                        <div class="py-[30px] flex justify-center">
-                            <img class="lg:w-[88px] lg:h-[88px] transition filter grayscale hover:grayscale-0"
-                                src="{{ asset('storage/icons/1.png') }}" alt="KFC" class="object-cover">
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[88px] md:h-[88px] w-[48px] h-[48px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/1.png') }}" alt="KFC"
+                                class="w-full h-full object-cover">
                         </div>
-                        <div class="py-[46px] flex justify-center">
-                            <img class="lg:w-[99px] lg:h-[54px] transition filter grayscale hover:grayscale-0"
-                                src="{{ asset('storage/icons/2.png') }}" alt="Sports network" class="object-cover">
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/2.png') }}" alt="Sports network"
+                                class="w-full h-full object-cover">
                         </div>
-                        <div class="py-[46px] flex justify-center">
-                            <img class="lg:w-[99px] lg:h-[54px] transition filter grayscale hover:grayscale-0"
-                                src="{{ asset('storage/icons/3.png') }}" alt="BKT" class="object-cover">
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/3.png') }}" alt="BKT"
+                                class="w-full h-full object-cover">
                         </div>
-                        <div class="py-[46px] flex justify-center">
-                            <img class="lg:w-[99px] lg:h-[54px] transition filter grayscale hover:grayscale-0"
-                                src="{{ asset('storage/icons/4.png') }}" alt="kayo" class="object-cover">
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/4.png') }}" alt="kayo"
+                                class="w-full h-full object-cover">
                         </div>
 
                     </div>
@@ -435,12 +480,12 @@
                     <div
                         class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex flex-wrap justify-center gap-[40px] md:gap-[100px] sponsor">
 
-                        <div class="pt-[40px] pb-[50px] flex justify-center">
-                            <img class="lg:w-[99px] lg:h-[54px] w-[86px] transition filter grayscale hover:grayscale-0"
+                        <div class="lg:py-[46px] py-[20px] flex justify-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[80px] transition filter grayscale hover:grayscale-0"
                                 src="{{ asset('storage/icons/5.png') }}" alt="Foxtel" class="object-cover">
                         </div>
-                        <div class="pt-[40px] pb-[50px] flex justify-center">
-                            <img class="lg:w-[99px] lg:h-[54px] w-[86px] transition filter grayscale hover:grayscale-0"
+                        <div class="lg:py-[46px] py-[20px] flex justify-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[80px] transition filter grayscale hover:grayscale-0"
                                 src="{{ asset('storage/icons/6.png') }}" alt="weber" class="object-cover">
                         </div>
 

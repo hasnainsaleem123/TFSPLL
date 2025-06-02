@@ -17,11 +17,11 @@
 
         <div class="flex md:justify-between justify-center">
 
-            <div class="flex xl:gap-[16px] lg:gap-[14px]  min-[500px]:gap-[40px] gap-[10px] px-[16px] sm:px-0">
+            <div class="flex xl:gap-[16px] lg:gap-[14px] min-[500px]:gap-[40px] gap-[10px] px-[16px] sm:px-0">
                 <button
-                    class="border-2 border-[#0E4EB8] text-[#0A0443] px-[18px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans">Fixtures</button>
+                    class="border-2 border-[#0E4EB8] text-[#0A0443] sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-dm-sans font-semibold">Fixtures</button>
                 <button
-                    class="border-2 border-[#0E4EB8] text-[#0A0443] px-[18px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans">Results</button>
+                    class="border-2 border-[#0E4EB8] text-[#0A0443] sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-dm-sans font-semibold">Results</button>
 
                 {{-- <div>
                     <select
@@ -45,7 +45,7 @@
 
                 <div>
                     <button
-                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center  px-[18px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
+                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center  sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
                         Teams <span class="ml-2 items-center  py-2"><img src="{{ asset('storage/matches/b.svg') }}"
                                 alt="" class="h-auto w-auto"></span>
                     </button>
@@ -53,7 +53,7 @@
 
                 <div>
                     <button
-                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center px-[18px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
+                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
                         Date <span class="ml-2 items-center  py-2"><img src="{{ asset('storage/matches/b.svg') }}"
                                 alt=""></span>
                     </button>
@@ -75,7 +75,7 @@
             <div class="hidden md:block">
                 <div class="">
                     <button
-                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center px-[18px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
+                        class="border-2 border-[#0E4EB8] text-[#0A0443] items-center sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
                         Men <span class="ml-2 items-center py-2"><img src="{{ asset('storage/matches/b.svg') }}"
                                 alt=""></span>
                     </button>

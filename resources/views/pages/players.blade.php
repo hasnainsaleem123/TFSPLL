@@ -1808,6 +1808,87 @@
 
     </div>
 
+    {{-- sponsor section --}}
+    <div class="lg:my-[100px] my-[30px] relative">
+        <div>
+            <img src="{{ asset('storage/about/sponsor.png') }}" alt=""
+                class="lg:h-[644px] md:h-[450px] sm:h-[430px] h-[400px] w-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-white opacity-80"></div>
+        <div class="grid grid-cols-1 xl:grid-cols-3 lg:py-[60px] py-[30px] absolute inset-0">
+            <div class="hidden xl:block"></div>
+
+            <div class="">
+                <h2 class="font-montagu-slab text-[#094AB7] font-semibold text-center lg:text-[30px] text-[18px]">TFSC
+                    Premier League
+                    Sponsers
+                </h2>
+                <p
+                    class="font-dm-sans lg:text-[18px] text-[12px] text-center mt-[20px] leading-[24px] text-wrap xl:px-0 px-5">
+                    Twenty
+                    Four Seven
+                    Consultancy
+                    Premier League
+                    Twenty
+                    Four Seven
+                    Consultancy
+                    Premier League Twenty Four Seven Consultancy Premier League
+                </p>
+                <div class="absolute left-0 right-0 mt-[40px] sponsor">
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+
+                    <div
+                        class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex justify-center gap-[40px] md:gap-[100px] ">
+
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[88px] md:h-[88px] w-[48px] h-[48px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/1.png') }}" alt="KFC"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/2.png') }}" alt="Sports network"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/3.png') }}" alt="BKT"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="lg:py-[46px] py-[20px] flex justify-center items-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[54px] h-[29px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/4.png') }}" alt="kayo"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                    </div>
+
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+
+                    <div
+                        class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex flex-wrap justify-center gap-[40px] md:gap-[100px] sponsor">
+
+                        <div class="lg:py-[46px] py-[20px] flex justify-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[80px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/5.png') }}" alt="Foxtel" class="object-cover">
+                        </div>
+                        <div class="lg:py-[46px] py-[20px] flex justify-center">
+                            <img class="md:w-[99px] md:h-[54px] w-[80px] transition filter grayscale hover:grayscale-0"
+                                src="{{ asset('storage/icons/6.png') }}" alt="weber" class="object-cover">
+                        </div>
+
+                    </div>
+
+                    {{-- line break --}}
+                    <div class="border-b border-b-[#808080]"></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
 
     <script>
         $('.events-slider').on('edge', function(event, slick, direction) {

@@ -30,3 +30,9 @@ Route::get('dhd', function () {
 Route::get('players', function () {
     return view('pages.players');
 });
+Route::get('drafting', function () {
+    return view('pages.drafting');
+});
+Route::get('videos', function () {
+    return view('pages.videos');
+});

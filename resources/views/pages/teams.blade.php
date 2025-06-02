@@ -15,7 +15,7 @@
         <div class="w-[84%] mx-auto">
 
             <div class="grid grid-cols-1 lg:grid-cols-5 xl:gap-6 lg:gap-4 gap-6 ">
-                <div class="bg-[#09154B] lg:col-span-1 rounded-[10px]">
+                <div class="bg-[#094AB7] lg:col-span-1">
                     <ul
                         class="xl:text-[14px] lg:text-[11px] text-[10px] font-montserrat font-medium text-white lg:space-y-4 uppercase py-5  ">
                         <li class="hover:bg-[#132782] px-5">STRIKERS</li>
@@ -31,8 +31,7 @@
                     <div class="relative flex items-center overflow-hidden w-full min-[365px]:h-[200px] lg:h-full">
 
                         <!-- Left dark box -->
-                        <div
-                            class="sm:w-[250px] w-[150px] h-full bg-[#1D167D] rounded-tl-[10px] rounded-bl-[10px] z-10 relative">
+                        <div class="sm:w-[250px] w-[150px] h-full bg-[#094AB7] z-10 relative">
                             {{-- image --}}
                             <div class="absolute sm:inset-0 top-8">
                                 <img src="{{ asset('storage/T/344.png') }}" alt="">
@@ -42,8 +41,7 @@
                         </div>
                         {{-- bg image --}}
                         <div class="inset-0 absolute">
-                            <img src="{{ asset('storage/T/tfb.png') }}" alt=""
-                                class="w-full h-full object-cover rounded-[10px]">
+                            <img src="{{ asset('storage/T/tfb.png') }}" alt="" class="w-full h-full object-cover">
 
                         </div>
                         {{-- team name --}}
@@ -77,11 +75,10 @@
                     FIXTURES
                 </h2>
                 {{-- upcoming match --}}
-                <div
-                    class="bg-white 2xl:mx-[102px] xl:mx-[80px] lg:mx-[60px] md:mx-[40px] mx-[40px]  rounded-[6px] relative z-10">
-                    <div class="  border border-black rounded-[5px] mb-[20px]">
+                <div class="bg-white 2xl:mx-[102px] xl:mx-[80px] lg:mx-[60px] md:mx-[40px] mx-[40px] relative z-10">
+                    <div class="  border border-[#094AB7] mb-[20px]">
                         <div
-                            class="bg-[#132782] text-white h-[45px] px-6 flex items-center text-[15px] 2xl:text-[18px] font-bold font-dm-sans 2xl:leading-60">
+                            class="bg-[#094AB7] text-white h-[45px] px-6 flex items-center text-[15px] 2xl:text-[18px] font-bold font-dm-sans 2xl:leading-60">
                             Upcoming
                             <hr class="flex-grow border-t-2 border-[#ffffff] ml-4">
                         </div>
@@ -122,7 +119,7 @@
                             <!-- Right Side -->
                             <div class="md:text-right text-center md:pr-[22px] md:mb-[33px] md:mt-[20px] mb-[10px]">
                                 <button
-                                    class="border-[1px] border-[#0A0443] text-[#0A0443] px-5 py-2 rounded-full 2xl:text-[14px] xl:text-[12px] md:text-[11px] text-[11px] font-dm-sans font-bold">
+                                    class="border-[1px] border-[#094AB7] text-[#094AB7] px-5 py-2 2xl:text-[14px] xl:text-[12px] md:text-[11px] text-[11px] font-dm-sans font-bold">
                                     Match Centre
                                 </button>
                             </div>
@@ -133,11 +130,10 @@
 
 
                 {{-- upcoming match --}}
-                <div
-                    class="bg-white 2xl:mx-[102px] xl:mx-[80px] lg:mx-[60px] md:mx-[40px] mx-[40px]  rounded-[6px] relative z-10">
-                    <div class="  border border-black rounded-[5px] mb-[20px]">
+                <div class="bg-white 2xl:mx-[102px] xl:mx-[80px] lg:mx-[60px] md:mx-[40px] mx-[40px] relative z-10">
+                    <div class="  border border-[#094AB7] mb-[20px]">
                         <div
-                            class="bg-[#132782] text-white h-[45px] px-6 flex items-center text-[15px] 2xl:text-[18px] font-bold font-dm-sans 2xl:leading-60">
+                            class="bg-[#094AB7] text-white h-[45px] px-6 flex items-center text-[15px] 2xl:text-[18px] font-bold font-dm-sans 2xl:leading-60">
                             Upcoming
                             <hr class="flex-grow border-t-2 border-[#ffffff] ml-4">
                         </div>
@@ -178,7 +174,7 @@
                             <!-- Right Side -->
                             <div class="md:text-right text-center md:pr-[22px] md:mb-[33px] md:mt-[20px] mb-[10px]">
                                 <button
-                                    class="border-[1px] border-[#0A0443] text-[#0A0443] px-5 py-2 rounded-full 2xl:text-[14px] xl:text-[12px] md:text-[11px] text-[11px] font-dm-sans font-bold">
+                                    class="border-[1px] border-[#094AB7] text-[#094AB7] px-5 py-2 2xl:text-[14px] xl:text-[12px] md:text-[11px] text-[11px] font-dm-sans font-bold">
                                     Match Centre
                                 </button>
                             </div>

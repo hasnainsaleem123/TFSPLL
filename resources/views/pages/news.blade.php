@@ -209,7 +209,7 @@
     {{-- ending button --}}
     <div class="mb-10">
         <div class="flex justify-center items-center py-5">
-            <button class="px-4 py-2 bg-[#09154B] text-white text-[14px] rounded-[5px] font-montserrat">
+            <button class="px-4 py-2 bg-[#094AB7] text-white text-[14px] font-montserrat">
                 Load More
             </button>
         </div>
