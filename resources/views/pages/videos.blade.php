@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Videos')
 @section('content')
     {{-- header --}}
     <div class="relative w-full h-screen">
@@ -8,8 +9,6 @@
                 <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
             </video>
         </div>
-
-        <!-- Overlay Content -->
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-white text-center max-w-[583px]">
                 <p class="font-montagu-slab font-bold 2xl:text-[50px] xl:text-[40px] lg:text-[30px] text-[18px]">
@@ -33,7 +32,6 @@
             </div>
         </div>
     </div>
-
 
     {{-- players data section --}}
     <div class="lg:pt-[60px] pt-[30px]">
@@ -72,10 +70,7 @@
                     </div>
                     <div class="hidden lg:flex"></div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 
@@ -110,12 +105,8 @@
                 <div>
                     <img src="{{ asset('storage/drafting/1.png') }}" alt="">
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
 
     {{-- teams mobile view --}}
@@ -149,24 +140,16 @@
                 <div class="flex justify-center">
                     <img src="{{ asset('storage/drafting/1.png') }}" alt="">
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
 
     {{-- Vieos --}}
-    {{-- heading --}}
     <div class="xl:w-[84%] mx-auto w-[94%]">
         <p
             class="2xl:text-[30px] xl:text-[25px] lg:text-[20px] text-[18px] font-montagu-slab text-[#094AB7] font-bold lg:pb-[30px] pb-[21px]">
             Videos</p>
-
-        {{-- grid --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
-            {{-- ist --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -174,7 +157,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -189,8 +171,6 @@
                     </div>
                 </div>
             </div>
-
-            {{-- 2nd --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -198,7 +178,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -213,8 +192,6 @@
                     </div>
                 </div>
             </div>
-
-            {{-- 3rd --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -222,7 +199,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -237,7 +213,6 @@
                     </div>
                 </div>
             </div>
-            {{-- 4th --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -245,7 +220,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -260,7 +234,6 @@
                     </div>
                 </div>
             </div>
-            {{-- 5th --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -268,7 +241,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -283,7 +255,6 @@
                     </div>
                 </div>
             </div>
-            {{-- 6th --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -291,7 +262,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -306,7 +276,6 @@
                     </div>
                 </div>
             </div>
-            {{-- 7th --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -314,7 +283,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -329,7 +297,6 @@
                     </div>
                 </div>
             </div>
-            {{-- 8th --}}
             <div>
                 <div class="border-2 border-[#F4F4F4]">
                     <div class="w-full">
@@ -337,7 +304,6 @@
                             <source src="{{ asset('storage/new/video-tsfpl.mp4') }}" type="video/mp4">
                         </video>
                     </div>
-
                     <div class="py-[20px] px-[20px]">
                         <div class="flex justify-between">
                             <p class="xl:text-[18px] lg:text-[16px] md:text-[14px] text-[12px] font-montserrat font-bold">
@@ -352,7 +318,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -365,8 +330,7 @@
         <div class="absolute inset-0 bg-white opacity-80"></div>
         <div class="grid grid-cols-1 xl:grid-cols-3 lg:py-[60px] py-[30px] absolute inset-0">
             <div class="hidden xl:block"></div>
-
-            <div class="">
+            <div>
                 <h2 class="font-montagu-slab text-[#094AB7] font-semibold text-center lg:text-[30px] text-[18px]">TFSC
                     Premier League
                     Sponsers
@@ -383,9 +347,7 @@
                     Premier League Twenty Four Seven Consultancy Premier League
                 </p>
                 <div class="absolute left-0 right-0 mt-[40px] sponsor">
-                    {{-- line break --}}
                     <div class="border-b border-b-[#808080]"></div>
-
                     <div
                         class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex justify-center gap-[40px] md:gap-[100px] ">
 
@@ -409,12 +371,8 @@
                                 src="{{ asset('storage/icons/4.png') }}" alt="kayo"
                                 class="w-full h-full object-cover">
                         </div>
-
                     </div>
-
-                    {{-- line break --}}
                     <div class="border-b border-b-[#808080]"></div>
-
                     <div
                         class="md:w-[84%] md:mx-auto xl:px-[80px] lg:px-[40px] px-[20px] flex flex-wrap justify-center gap-[40px] md:gap-[100px] sponsor">
 
@@ -426,14 +384,10 @@
                             <img class="md:w-[99px] md:h-[54px] w-[80px] transition filter grayscale hover:grayscale-0"
                                 src="{{ asset('storage/icons/6.png') }}" alt="weber" class="object-cover">
                         </div>
-
                     </div>
-
-                    {{-- line break --}}
                     <div class="border-b border-b-[#808080]"></div>
                 </div>
             </div>
-            <div></div>
         </div>
     </div>
 @endsection

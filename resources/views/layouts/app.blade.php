@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    {{-- Meta Title --}}
+    <title>@yield('title', 'TFSPL')</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -39,8 +41,8 @@
     {{-- flowbite script --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
-    {{-- carousel --}}
-
+    {{-- fav icon --}}
+    <link rel="icon" type="image/x-icon" href="https://24-7consultancy.pk/assets/pics/favicon.webp">
 
 
     <title>TFSPL</title>

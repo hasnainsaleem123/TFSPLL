@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Matches')
 
 @section('content')
     <!-- Header Section -->
@@ -14,35 +15,12 @@
     <!-- Filters Section -->
     <div
         class="xl:w-[84%] mx-auto 2xl:px-[180px] xl:px-[120px] min-[1000px]:px-[90px] md:px-[20px] px-[16px] lg:w-[88%] w-[94%] bg-white py-10">
-
         <div class="flex md:justify-between justify-center">
-
             <div class="flex xl:gap-[16px] lg:gap-[14px] min-[500px]:gap-[40px] gap-[10px] px-[16px] sm:px-0">
                 <button
                     class="border-2 border-[#0E4EB8] text-[#0A0443] sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-dm-sans font-semibold">Fixtures</button>
                 <button
                     class="border-2 border-[#0E4EB8] text-[#0A0443] sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-dm-sans font-semibold">Results</button>
-
-                {{-- <div>
-                    <select
-                        class="border-2 border-[#0A0443] text-[#0A0443]  px-7 py-2 rounded-[5px] text-[16px] font-bold font-montserrat">
-                        <option disabled selected>Teams</option>
-                        <option value="Team A">Team A</option>
-                        <option value="Team B">Team B</option>
-                        <option value="Team C">Team C</option>
-                    </select>
-                </div>
-
-                <div>
-                    <select
-                        class="border-2 border-[#0A0443] text-[#0A0443]  px-7 py-2 rounded-[5px] text-[16px] font-bold font-montserrat">
-                        <option disabled selected>Date</option>
-                        <option value="Today">Today</option>
-                        <option value="Yesterday">Yesterday</option>
-                        <option value="Last 7 Days">Last 7 Days</option>
-                    </select>
-                </div> --}}
-
                 <div>
                     <button
                         class="border-2 border-[#0E4EB8] text-[#0A0443] items-center  sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
@@ -50,7 +28,6 @@
                                 alt="" class="h-auto w-auto"></span>
                     </button>
                 </div>
-
                 <div>
                     <button
                         class="border-2 border-[#0E4EB8] text-[#0A0443] items-center sm:px-[18px] px-[12px] py-[5px] md:px-7 md:py-2 xl:text-[16px] lg:text-[14px] sm:text-[12px] text-[10px] font-bold font-dm-sans flex">
@@ -59,19 +36,6 @@
                     </button>
                 </div>
             </div>
-
-            {{-- <div>
-                <select
-                    class="border-2 border-[#0A0443] text-[#0A0443]  px-7 py-2 rounded-[5px] text-[16px] font-bold font-montserrat">
-                    <option disabled selected>Men</option>
-                    <option value="Men">Men</option>
-                    <option value="Women">Women</option>
-                    <option value="Both">Both</option>
-                </select>
-              </div> --}}
-
-
-
             <div class="hidden md:block">
                 <div class="">
                     <button
@@ -81,9 +45,7 @@
                     </button>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <!-- Live Match -->
@@ -103,7 +65,7 @@
                     width: 7px;
                     height: 7px;
                     background-color: #FF0066;
-                    /* Tailwind's red-500 */
+
                     border-radius: 50%;
                     position: absolute;
                     top: 20.8px;
@@ -150,11 +112,8 @@
                 </div>
                 <div class="flex-grow h-0.5 bg-[#FF0066] ml-[-10px]"></div>
             </div>
-
-
             {{-- grid --}}
-            <div class="sm:px-5 grid sm:grid-cols-3  items-center max-[640px]:my-2 max-[640px]:px-15">
-                <!-- Left Side -->
+            <div class="sm:px-5 grid sm:grid-cols-3 items-center max-[640px]:my-2 max-[640px]:px-15">
                 <div class="max-[640px]:text-center pt-[20px] md:pt-0">
                     <p class="lg:text-[18px] text-[16px] font-bold font-dm-sans lg:leading-[27px] sm:leading-[20px]">
                         19 Dec
@@ -165,32 +124,25 @@
                         Islamabad Cricket
                         Stadium</p>
                 </div>
-
-                <!-- Middle Section -->
                 <div class="grid grid-cols-3 items-center text-center md:mt-[31px] md:mb-[40px] py-[20px]">
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Zalmiico.png') }}" alt="Zalmi" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Zalmi</p>
                     </div>
-
                     <p class="lg:text-[14px] sm:text-[12px] font-medium font-montserrat">vs</p>
-
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Warrior.png') }}" alt="Warriors" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Warriors</p>
                     </div>
                 </div>
-
-                <!-- Right Side -->
                 <div class="sm:text-right md:pr-[22px] sm:pr-[19px] min-[365px]:text-center mb-[20px] md:mb-0">
                     <button
                         class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px]  font-dm-sans font-semibold">
                         Match Centre
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -198,15 +150,14 @@
     {{-- upcoming match --}}
     <div
         class="xl:w-[84%] mx-auto 2xl:px-[180px] xl:px-[120px] min-[1000px]:px-[90px] md:px-[20px] px-[16px] lg:w-[88%] w-[94%]">
-        <div class="  border border-[#0E4EB8] mb-13">
+        <div class="border border-[#0E4EB8] mb-13">
             <div
                 class="bg-[#0E4EB8] text-white sm:h-[56px] h-[25px] px-[10px] md:px-6 flex items-center sm:text-[18px] text-[12px] font-bold font-dm-sans leading-[60px]">
                 Upcoming
                 <hr class="flex-grow border-t-2 border-[#D6D607] ml-4">
             </div>
             {{-- grid --}}
-            <div class="sm:px-5 grid sm:grid-cols-3  items-center max-[640px]:my-2 max-[640px]:px-15">
-                <!-- Left Side -->
+            <div class="sm:px-5 grid sm:grid-cols-3 items-center max-[640px]:my-2 max-[640px]:px-15">
                 <div class="max-[640px]:text-center pt-[20px] md:pt-0">
                     <p class="lg:text-[18px] text-[16px] font-bold font-dm-sans lg:leading-[27px] sm:leading-[20px]">
                         19 Dec
@@ -217,32 +168,25 @@
                         Islamabad Cricket
                         Stadium</p>
                 </div>
-
-                <!-- Middle Section -->
                 <div class="grid grid-cols-3 items-center text-center md:mt-[31px] md:mb-[40px] py-[20px]">
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Zalmiico.png') }}" alt="Zalmi" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Zalmi</p>
                     </div>
-
                     <p class="lg:text-[14px] sm:text-[12px] font-medium font-montserrat">vs</p>
-
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Warrior.png') }}" alt="Warriors" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Warriors</p>
                     </div>
                 </div>
-
-                <!-- Right Side -->
                 <div class="sm:text-right md:pr-[22px] sm:pr-[19px] min-[365px]:text-center mb-[20px] md:mb-0">
                     <button
-                        class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px]  font-dm-sans font-semibold">
+                        class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px] font-dm-sans font-semibold">
                         Match Centre
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -257,8 +201,7 @@
                 <hr class="flex-grow border-t-2 border-[#D6D607] ml-4">
             </div>
             {{-- grid --}}
-            <div class="sm:px-5 grid sm:grid-cols-3  items-center max-[640px]:my-2 max-[640px]:px-15">
-                <!-- Left Side -->
+            <div class="sm:px-5 grid sm:grid-cols-3 items-center max-[640px]:my-2 max-[640px]:px-15">
                 <div class="max-[640px]:text-center pt-[20px] md:pt-0">
                     <p class="lg:text-[18px] text-[16px] font-bold font-dm-sans lg:leading-[27px] sm:leading-[20px]">
                         19 Dec
@@ -269,32 +212,25 @@
                         Islamabad Cricket
                         Stadium</p>
                 </div>
-
-                <!-- Middle Section -->
                 <div class="grid grid-cols-3 items-center text-center md:mt-[31px] md:mb-[40px] py-[20px]">
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Zalmiico.png') }}" alt="Zalmi" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Zalmi</p>
                     </div>
-
                     <p class="lg:text-[14px] sm:text-[12px] font-medium font-montserrat">vs</p>
-
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Warrior.png') }}" alt="Warriors" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Warriors</p>
                     </div>
                 </div>
-
-                <!-- Right Side -->
                 <div class="sm:text-right md:pr-[22px] sm:pr-[19px] min-[365px]:text-center mb-[20px] md:mb-0">
                     <button
                         class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px]  font-dm-sans font-semibold">
                         Match Centre
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -309,8 +245,7 @@
                 <hr class="flex-grow border-t-2 border-[#48D607] ml-4">
             </div>
             {{-- grid --}}
-            <div class="sm:px-5 grid sm:grid-cols-3  items-center max-[640px]:my-2 max-[640px]:px-15">
-                <!-- Left Side -->
+            <div class="sm:px-5 grid sm:grid-cols-3 items-center max-[640px]:my-2 max-[640px]:px-15">
                 <div class="max-[640px]:text-center pt-[20px] md:pt-0">
                     <p class="lg:text-[18px] text-[16px] font-bold font-dm-sans lg:leading-[27px] sm:leading-[20px]">
                         19 Dec
@@ -321,32 +256,25 @@
                         Islamabad Cricket
                         Stadium</p>
                 </div>
-
-                <!-- Middle Section -->
                 <div class="grid grid-cols-3 items-center text-center md:mt-[31px] md:mb-[40px] py-[20px]">
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Zalmiico.png') }}" alt="Zalmi" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Zalmi</p>
                     </div>
-
                     <p class="lg:text-[14px] sm:text-[12px] font-medium font-montserrat">vs</p>
-
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Warrior.png') }}" alt="Warriors" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Warriors</p>
                     </div>
                 </div>
-
-                <!-- Right Side -->
                 <div class="sm:text-right md:pr-[22px] sm:pr-[19px] min-[365px]:text-center mb-[20px] md:mb-0">
                     <button
                         class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px]  font-dm-sans font-semibold">
                         Match Centre
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -361,8 +289,7 @@
                 <hr class="flex-grow border-t-2 border-[#48D607] ml-4">
             </div>
             {{-- grid --}}
-            <div class="sm:px-5 grid sm:grid-cols-3  items-center max-[640px]:my-2 max-[640px]:px-15">
-                <!-- Left Side -->
+            <div class="sm:px-5 grid sm:grid-cols-3 items-center max-[640px]:my-2 max-[640px]:px-15">
                 <div class="max-[640px]:text-center pt-[20px] md:pt-0">
                     <p class="lg:text-[18px] text-[16px] font-bold font-dm-sans lg:leading-[27px] sm:leading-[20px]">
                         19 Dec
@@ -373,32 +300,25 @@
                         Islamabad Cricket
                         Stadium</p>
                 </div>
-
-                <!-- Middle Section -->
                 <div class="grid grid-cols-3 items-center text-center md:mt-[31px] md:mb-[40px] py-[20px]">
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Zalmiico.png') }}" alt="Zalmi" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Zalmi</p>
                     </div>
-
                     <p class="lg:text-[14px] sm:text-[12px] font-medium font-montserrat">vs</p>
-
                     <div class="flex flex-col items-center">
                         <img src="{{ asset('storage/Warrior.png') }}" alt="Warriors" class="h-13">
                         <p class="lg:text-[15px] text-[13px] font-semibold font-dm-sans text-[#2F3F50]">
                             Warriors</p>
                     </div>
                 </div>
-
-                <!-- Right Side -->
                 <div class="sm:text-right md:pr-[22px] sm:pr-[19px] min-[365px]:text-center mb-[20px] md:mb-0">
                     <button
                         class="border-[1px] border-[#0E4EB8] text-[#0A0443] px-5 py-[3px] md:py-2 lg:text-[14px] text-[10px]  font-dm-sans font-semibold">
                         Match Centre
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
