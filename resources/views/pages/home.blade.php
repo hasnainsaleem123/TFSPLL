@@ -163,9 +163,9 @@
                                 </video>
                             </div>
                             <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                                <video autoplay muted loop playsinline class="block w-full h-full object-cover">
+                                {{-- <video autoplay muted loop playsinline class="block w-full h-full object-cover">
                                     <source src="{{ asset('storage/web-bg.webm') }}" type="video/mp4">
-                                </video>
+                                </video> --}}
                             </div>
                         </div>
                         <button type="button"
@@ -520,7 +520,7 @@
             Magic Moments
         </h2>
         <div class="magic_moments  overflow-hidden">
-            <div class="magic_boxes w-full h-full mx-[5px] overflow-hidden">
+            <div class="w-full h-full mx-[5px] overflow-hidden">
                 <img src="{{ asset('storage/new/1.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -528,7 +528,7 @@
                         celebration moments</p>
                 </div>
             </div>
-            <div class="magic_boxes w-full h-full mx-[5px] relative">
+            <div class="w-full h-full mx-[5px] relative">
                 <img src="{{ asset('storage/new/2.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -536,7 +536,7 @@
                         celebration moments</p>
                 </div>
             </div>
-            <div class="magic_boxes w-full h-full mx-[5px]">
+            <div class="w-full h-full mx-[5px]">
                 <img src="{{ asset('storage/new/3.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -544,7 +544,7 @@
                         celebration moments</p>
                 </div>
             </div>
-            <div class="magic_boxes w-full h-full object-cover mx-[5px]">
+            <div class="w-full h-full object-cover mx-[5px]">
                 <img src="{{ asset('storage/new/4.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -552,7 +552,7 @@
                         celebration moments</p>
                 </div>
             </div>
-            <div class="magic_boxes w-full h-full mx-[5px]">
+            <div class="w-full h-full mx-[5px]">
                 <img src="{{ asset('storage/new/5.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -560,7 +560,7 @@
                         celebration moments</p>
                 </div>
             </div>
-            <div class="magic_boxes w-full h-full mx-[5px]">
+            <div class="w-full h-full mx-[5px]">
                 <img src="{{ asset('storage/new/3.png') }}" alt="" class="w-full h-full object-cover">
                 <div class="bg-[#094AB7]">
                     <p class="text-white pl-[16px] py-[22px] sm:text-[18px] text-[14px] font-montserrat font-bold">Winning
@@ -1789,7 +1789,7 @@
             </div>
         </div>
     </div>
-    <script>
+    <script defer>
         $('.events-slider').on('edge', function(event, slick, direction) {
             //Edge: last slide of the slider when infinity=false
             console.log('edge was hit');

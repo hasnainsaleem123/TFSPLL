@@ -190,7 +190,7 @@
         </div>
         <div class="relative bg-[#094AB7]"></div>
         {{-- 2nd table --}}
-        <div class="relative">
+        <div class="relative bg-[#094AB7]">
             <table class="w-full text-white font-dm-sans font-bold border-collapse ">
                 <thead class="border-b-[1px] border-[#0EA825] font-bold">
                     <tr class="text-white text-left xl:text-[18px] lg:text-[16px] sm:text-[14px] text-[12px]">

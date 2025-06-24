@@ -8,7 +8,6 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('pages.about');
 });
-
 Route::get('matches', function () {
     return view('pages.matches');
 });

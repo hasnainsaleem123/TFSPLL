@@ -32,6 +32,7 @@
             }
         }
     </style>
+
     {{-- hero section --}}
     <div class="relative w-full h-full example">
         <img src="{{ asset('storage/about/about1.png') }}" alt="" class="w-full h-full object-cover">
@@ -417,7 +418,7 @@
         </div>
     </div>
 
-    <script>
+    <script defer>
         $('.management_section').slick({
             infinite: true,
             slidesToShow: 3,
